@@ -1,35 +1,28 @@
-repo_url: https://github.com/vitorfleonardo/VerificAAA
-repo_name: VerificAAA
+site_name: Plugin de Acessibilidade - IHC
+site_description: Documentação do projeto de Interação Humano-Computador - Grupo 09.
+site_author: Grupo 09
 
-site_url: https://github.com/vitorfleonardo/VerificAAA
-site_name: VerificAAA
-
-use_directory_urls: False
-
-nav:
-  - Início - VerificAAA: 'index.md'
-
-  - Desenvolvimento Web:
-    - Desenvolvimento: 'devWeb/non_text_content.md'
-
-  - Design:
-    - Design: 'design/design.md'
-  
-  - Geração de Conteúdo:
-    - Conteúdo: 'geracaoConteudo/conteudo.md'
-
-  - Gestão de Projetos:
-    - Gestão de Projetos: 'gestaoProjeto/gestaoProjeto.md'
-
-  - Ferramentas:
-    - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
+repo_url: https://github.com/Gotc2607/IHC_Plugin-Acessibilidade
+repo_name: IHC_Plugin-Acessibilidade
 
 theme:
-  name: readthedocs
-  locale: pt_BR
-  titles_only: true
-  logo: imagens/logo-verificaaa.png
-  favicon: imagens/logo-verificaaa.png
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
 
 markdown_extensions:
   - def_list
@@ -37,5 +30,11 @@ markdown_extensions:
       custom_checkbox: false
       clickable_checkbox: true
 
-extra_css:
-  - stylesheets/extra.css
+nav:
+  - Início: index.md
+  - Design: design.md
+  - Desenvolvimento Web: desenvolvimento.md
+  - Geração de Conteúdo: conteudo.md
+  - Gestão de Projetos: gestao.md
+  - Ferramentas: ferramentas.md
+  - Heurísticas de Nielsen: heuristicas.md
