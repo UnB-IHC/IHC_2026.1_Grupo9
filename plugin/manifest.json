@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Avaliador Heurístico Híbrido",
+  "version": "2.0",
+  "description": "Checklist de avaliação com inspeção automática e exportação para TXT.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Abrir Checklist"
+  }
+}
