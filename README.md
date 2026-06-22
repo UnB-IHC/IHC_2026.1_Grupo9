@@ -17,10 +17,13 @@ O VerificaAAA é nome do projeto criado a partir do curso de Interação Humano 
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/vitorfleonardo"><img style="border-radius: 50%;" src="https://github.com/vitorfleonardo.png" width="100px;" alt=""/><br /><sub><b>Vitor Feijó</b></sub></a><br />
-    <td align="center"><a href="https://github.com/CADU110"><img style="border-radius: 50%;" src="https://github.com/CADU110.png" width="100px;" alt=""/><br /><sub><b>Carlos Eduardo</b></sub></a><br />   
-    <td align="center"><a href="https://github.com/Angelicahaas"><img style="border-radius: 50%;" src="https://github.com/Angelicahaas.png" width="100px;" alt=""/><br /><sub><b>Harleny Angéllica</b></sub></a><br />   
-    <td align="center"><a href="https://github.com/Erick-ems "><img style="border-radius: 50%;" src="https://github.com/Erick-ems.png" width="100px;" alt=""/><br /><sub><b>Erick Santos</b></sub></a><br />
-    <td align="center"><a href="https://github.com/maykonjuso "><img style="border-radius: 50%;" src="https://github.com/maykonjuso.png" width="100px;" alt=""/><br /><sub><b>Maykon Júnio</b></sub></a><br />
+    <td align="center"><a href="https://github.com/joaoguilherme14"><img style="border-radius: 50%;" src="https://github.com/joaoguilherme14.png" width="100px;" alt=""/><br /><sub><b>João Guilherme </b></sub></a><br />
+    <td align="center"><a href="https://github.com/joaoleless"><img style="border-radius: 50%;" src="https://github.com/joaoleless.png" width="100px;" alt=""/><br /><sub><b>joao leles</b></sub></a><br />   
+    <td align="center"><a href="https://github.com/Gotc2607"><img style="border-radius: 50%;" src="https://github.com/Gotc2607.png" width="100px;" alt=""/><br /><sub><b>Giovani </b></sub></a><br />   
+    <td align="center"><a href="https://github.com/DaviUrsulino "><img style="border-radius: 50%;" src="https://github.com/DaviUrsulino.png" width="100px;" alt=""/><br /><sub><b>Davi Ursulino</b></sub></a><br />
+    <td align="center"><a href="https://github.com/Luizz97 "><img style="border-radius: 50%;" src="https://github.com/Luizz97.png" width="100px;" alt=""/><br /><sub><b>Luiz Henrique</b></sub></a><br />
+    <td align="center"><a href="https://github.com/davirnunes"><img style="border-radius: 50%;" src="https://github.com/davirnunes.png" width="100px;" alt=""/><br /><sub><b>Davi Nunes</b></sub></a><br />
+    <td align="center"><a href="https://github.com/arthurgomes1290"><img style="border-radius: 50%;" src="https://github.com/arthurgomes1290.png" width="100px;" alt=""/><br /><sub><b>artur gomes</b></sub></a><br />
+   
   </tr>
 </table>
