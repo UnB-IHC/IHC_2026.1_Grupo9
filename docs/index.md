@@ -47,3 +47,8 @@ O **CheckAAA** é um projeto criado a partir dos estudos realizados na disciplin
     <td align="center"><a href="https://github.com/arthurgomes1290"><img style="border-radius: 50%;" src="https://github.com/arthurgomes1290.png" width="100px;" alt=""/><br /><sub><b>Artur Gomes</b></sub></a><br />
   </tr>
 </table>
+## Referências Bibliográficas
+
+*   **W3C (World Wide Web Consortium).** *Web Content Accessibility Guidelines (WCAG)*. Diretrizes de Acessibilidade para Conteúdo Web. Disponível para consulta das recomendações internacionais de acessibilidade aplicadas neste checklist.
+*   **Governo Federal do Brasil.** *Guia de Boas Práticas para Acessibilidade Digital / eMAG (Modelo de Acessibilidade em Governo Eletrônico)*. Documento orientativo que adapta as diretrizes globais para o contexto digital brasileiro.
+*   **ABNT (Associação Brasileira de Normas Técnicas).** *Normas Brasileiras (NBR) de Acessibilidade*. Inclui diretrizes aplicáveis a interfaces humano-computador e acessibilidade (como ABNT NBR 15206 e correlatas).

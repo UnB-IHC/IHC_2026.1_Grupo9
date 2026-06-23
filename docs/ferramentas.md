@@ -43,3 +43,8 @@ O código fonte do plugin encontra-se na pasta `plugin/` deste repositório. Voc
 4. Para cada uma das 10 heurísticas, selecione o **Status** (Adequado, Atenção, Falha Crítica, N/A) e escreva as **Evidências** no campo de texto logo abaixo.
 5. Clique no botão **"Gerar Relatório Detalhado (.txt)"**.
 6. O arquivo será baixado automaticamente com o nome `auditoria_ux_YYYY-MM-DD.txt`, pronto para ser anexado à documentação do seu projeto.
+## Referências Bibliográficas
+
+*   **W3C (World Wide Web Consortium).** *Web Content Accessibility Guidelines (WCAG)*. Diretrizes de Acessibilidade para Conteúdo Web. Disponível para consulta das recomendações internacionais de acessibilidade aplicadas neste checklist.
+*   **Governo Federal do Brasil.** *Guia de Boas Práticas para Acessibilidade Digital / eMAG (Modelo de Acessibilidade em Governo Eletrônico)*. Documento orientativo que adapta as diretrizes globais para o contexto digital brasileiro.
+*   **ABNT (Associação Brasileira de Normas Técnicas).** *Normas Brasileiras (NBR) de Acessibilidade*. Inclui diretrizes aplicáveis a interfaces humano-computador e acessibilidade (como ABNT NBR 15206 e correlatas).
