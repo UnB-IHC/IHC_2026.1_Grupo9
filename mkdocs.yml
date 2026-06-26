@@ -42,4 +42,7 @@ nav:
   - Gestão de Projetos: gestao_projetos.md
   - Nosso Plugin (Ferramenta): ferramentas.md
   - Heurísticas de Nielsen: heuristicas.md
-  - Teste de Usabilidade: teste_usabilidade.md
+  - Entrevista:
+    - Think Aloud: Entrevista/think_aloud.md
+    - Roteiro: Entrevista/roteiro.md
+    - Referências: Entrevista/referencias.md
