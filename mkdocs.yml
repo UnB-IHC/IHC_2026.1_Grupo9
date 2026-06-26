@@ -26,6 +26,10 @@ theme:
 
 markdown_extensions:
   - def_list
+  - admonition
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: false
       clickable_checkbox: true
@@ -33,8 +37,9 @@ markdown_extensions:
 nav:
   - Início: index.md
   - Design: design.md
-  - Desenvolvimento Web: desenvolvimento.md
+  - Desenvolvimento Web: desenvolvimentoweb.md
   - Geração de Conteúdo: conteudo.md
-  - Gestão de Projetos: gestao.md
+  - Gestão de Projetos: gestao_projetos.md
   - Nosso Plugin (Ferramenta): ferramentas.md
   - Heurísticas de Nielsen: heuristicas.md
+  - Teste de Usabilidade: teste_usabilidade.md
