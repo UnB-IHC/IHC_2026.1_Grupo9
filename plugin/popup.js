@@ -586,11 +586,12 @@ document.getElementById('gerar-txt').addEventListener('click', () => {
   relatorio += "====================================================================\n\n";
 
   resultadosMapeados.forEach((item, idx) => {
-    relatorio += `${idx + 1}. ${item.titulo.toUpperCase()}\n`;
-    relatorio += `Categoria : ${item.badge}\n`;
-    relatorio += `Norma     : ${item.norma}\n`;
-    relatorio += `Resultado : ${item.status}\n`;
-    relatorio += `Evidência : ${item.evidencia || 'Nenhuma observação adicional.'}\n`;
+    relatorio += `[ ITEM ${idx + 1} ] ${item.titulo.toUpperCase()}\n`;
+    relatorio += `Categoria         : ${item.badge}\n`;
+    relatorio += `Base Normativa    : ${item.norma}\n`;
+    relatorio += `O que foi avaliado: ${item.desc}\n`;
+    relatorio += `Resultado         : ${item.status}\n`;
+    relatorio += `Explicação        : ${item.evidencia || 'Nenhuma observação adicional registrada.'}\n`;
     relatorio += "--------------------------------------------------------------------\n\n";
   });
 

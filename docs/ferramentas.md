@@ -58,44 +58,11 @@ Como esta extensão é distribuída junto ao repositório do projeto, a instala�
 
 ## 📊 Estrutura do Relatório Gerado (`.txt`)
 
-Ao abrir a extensão, ela realiza a auditoria e preenche todas as notas em tempo real. Ao clicar em **"Gerar Relatório Completo"**, o plugin compila o resumo executivo e a avaliação detalhada em um arquivo padronizado (`auditoria_CheckAAA_YYYY-MM-DD.txt`), pronto para anexar a relatórios de QA ou pull requests:
+Ao abrir a extensão, ela realiza a varredura instantânea 360° e preenche todas as notas em tempo real. Ao clicar em **"Gerar Relatório Completo"**, o plugin compila o resumo executivo e a avaliação detalhada dos 18 critérios em um arquivo padronizado (`auditoria_CheckAAA_YYYY-MM-DD.txt`).
 
-```text
-=====================================================
-    RELATÓRIO DE AUDITORIA DE UX E ACESSIBILIDADE    
-    Gerado por: CheckAAA - Avaliador Híbrido         
-=====================================================
+Para não sobrecarregar esta página com a leitura extensa do arquivo gerado, separamos a demonstração integral dos 18 itens inspecionados em uma seção dedicada:
 
-DATA/HORA: 2026-06-28 15:30:00
-URL AUDITADA: https://exemplo-sistema.com.br/login
-TÍTULO DA PÁGINA: Portal do Cidadão - Acesso
-
------------------------------------------------------
-1. DIAGNÓSTICO AUTOMÁTICO (SCANNER DOM / WCAG 2.2)
------------------------------------------------------
-[OK] Atributo lang no HTML: pt-BR
-[FALHA] Imagens sem atributo 'alt': 2 encontradas
-[FALHA] Inputs de formulário sem 'label' associado: 1 encontrado
-[OK] Estrutura de cabeçalho principal (h1): Presente
-[ATENÇÃO] Links com abertura forçada em nova aba (_blank): 3 encontrados
-
------------------------------------------------------
-2. AVALIAÇÃO HEURÍSTICA QUALITATIVA (NIELSEN & UX)
------------------------------------------------------
-[H1. Visibilidade do status do sistema]
-Status: FALHA CRÍTICA
-Evidência: Ao clicar em 'Salvar', o sistema não exibe nenhum indicador de carregamento (spinner), deixando o usuário em dúvida se a ação foi processada.
-
-[H4. Consistência e Padrões]
-Status: ATENÇÃO
-Evidência: O botão de 'Cancelar' aparece em verde em algumas telas e em vermelho em outras, gerando confusão cognitiva.
-
-[H9. Ajuda a reconhecer, diagnosticar e recuperar de erros]
-Status: FALHA CRÍTICA
-Evidência: Mensagem de erro no formulário exibe apenas 'Erro 500', sem orientar o cidadão sobre como proceder ou oferecer um canal alternativo (Service Blueprint).
-
-=====================================================
-```
+👉 **[Consulte aqui o Template Completo do Relatório de Auditoria](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/relatorio_template.md)** para visualizar o formato exato de saída de cada check com explicação e base normativa.
 
 ---
 
