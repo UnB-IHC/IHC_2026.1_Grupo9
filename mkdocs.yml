@@ -1,9 +1,9 @@
-site_name: Plugin de Acessibilidade - IHC
-site_description: Documentação do projeto de Interação Humano-Computador - Grupo 09.
+site_name: CheckAAA
+site_description: Guia e checklist prático para implementação de UX, Acessibilidade (A11y) e Usabilidade.
 site_author: Grupo 09
 
-repo_url: https://github.com/Gotc2607/IHC_Plugin-Acessibilidade
-repo_name: IHC_Plugin-Acessibilidade
+repo_url: https://github.com/UnB-IHC/IHC_2026.1_Grupo9
+repo_name: IHC_2026.1_Grupo9
 
 theme:
   name: material
@@ -11,30 +11,46 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: deep orange
+      primary: green
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Mudar para modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: deep orange
+      primary: green
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Mudar para modo claro
 
 markdown_extensions:
   - def_list
+  - admonition
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: false
       clickable_checkbox: true
 
 nav:
   - Início: index.md
-  - Design: design.md
-  - Desenvolvimento Web: desenvolvimento.md
-  - Geração de Conteúdo: conteudo.md
-  - Gestão de Projetos: gestao.md
-  - Ferramentas: ferramentas.md
-  - Heurísticas de Nielsen: heuristicas.md
+  - Experiência do Usuário (UX) & Design:
+    - Design & Interfaces: design.md
+    - Design Empático: design_empatico.md
+    - Personas & Jornadas: personas.md
+    - Service Blueprint & Canvas: blueprint.md
+  - Desenvolvimento & Engenharia:
+    - Desenvolvimento Web: desenvolvimentoweb.md
+    - Geração de Conteúdo: conteudo.md
+    - Gestão de Projetos: gestao_projetos.md
+  - Avaliação, Usabilidade & Ferramentas:
+    - Heurísticas de Nielsen: heuristicas.md
+    - Teste de Usabilidade: teste_usabilidade.md
+    - Nosso Plugin (Ferramenta Híbrida): ferramentas.md
+    - Template do Relatório: relatorio_template.md
+  - Pesquisa & Entrevistas:
+    - Think Aloud: Entrevista/think_aloud.md
+    - Roteiro: Entrevista/roteiro.md
+    - Referências: Entrevista/referencias.md
