@@ -11,9 +11,9 @@ A criação de personas frequentemente ignora deficiências e neurodiversidade, 
 - [ ] **Contexto de Deficiência Inserido Naturalmente:** Pelo menos uma persona principal e uma secundária possuem alguma deficiência, restrição ou necessidade específica bem documentada em seu perfil? **[Guia de Boas Práticas, Metodologia de UX]**
 - [ ] **Evitar Estereótipos e "Capacitismo":** As descrições evitam apresentar a deficiência como um traço de pena ou "heroísmo" e simplesmente mostram como uma condição de uso real da interface? **[Guia de Boas Práticas]**
 - [ ] **Mapeamento do Espectro de Habilidades (Microsoft Inclusive Design):** As personas cobrem os 3 tipos de limitação identificados pela Microsoft? **[Guia de Boas Práticas]**
-   - **Permanente** (ex: um usuário de uma mão só).
-   - **Temporária** (ex: um usuário com braço engessado).
-   - **Situacional** (ex: um pai/mãe segurando um bebê no colo).
+    - **Permanente** (ex: um usuário de uma mão só).
+    - **Temporária** (ex: um usuário com braço engessado).
+    - **Situacional** (ex: um pai/mãe segurando um bebê no colo).
 
 ## 3. Mapeamento Tecnológico e de Assistência (Tecnologias Assistivas)
 - [ ] **Ferramentas de Navegação:** A ficha da persona indica explicitamente como ela interage com os dispositivos? (Ex: Leitor de telas NVDA no Windows, VoiceOver no iPhone, navegação via teclado, lupa/zoom, software de reconhecimento de voz). **[WCAG Princípio 4 (Robustez), eMAG 2.7, ABNT NBR]**
