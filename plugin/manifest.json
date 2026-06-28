@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Avaliador Heurístico Híbrido",
-  "version": "2.0",
-  "description": "Checklist de avaliação com inspeção automática e exportação para TXT.",
+  "name": "CheckAAA - Avaliador Automático de UX e Acessibilidade",
+  "version": "3.0",
+  "description": "Ferramenta de auditoria instantânea: avalia automaticamente WCAG 2.2, ABNT NBR 17060, Heurísticas de Nielsen e UX.",
   "permissions": [
     "activeTab",
     "scripting"
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Abrir Checklist"
+    "default_title": "Abrir Auditoria Automática"
   }
 }

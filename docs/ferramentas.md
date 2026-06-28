@@ -1,10 +1,10 @@
-# Avaliador Heurístico Híbrido (Plugin & Ferramenta de UX)
+# Avaliador Heurístico Híbrido (Plugin & Ferramenta de UX v3.0)
 
-O **Avaliador Heurístico Híbrido** é uma extensão de navegador desenvolvida sob medida para conduzir auditorias completas de Experiência do Usuário (UX), Acessibilidade Digital (A11y) e Usabilidade. A ferramenta conecta inspeções técnicas automatizadas às **10 Heurísticas de Usabilidade de Jakob Nielsen** e às metodologias centrais do design centrado no usuário.
+O **Avaliador Heurístico Híbrido** é uma extensão de navegador desenvolvida sob medida para conduzir auditorias instantâneas de Experiência do Usuário (UX), Acessibilidade Digital (A11y) e Usabilidade. A ferramenta conecta inspeções técnicas automatizadas às **10 Heurísticas de Usabilidade de Jakob Nielsen** e às metodologias centrais do design centrado no usuário.
 
-Atuando de forma híbrida, o plugin une o melhor dos dois mundos:
-1. **Varredura Automática (Scanner DOM):** Identifica violações técnicas e estruturais de código em milissegundos.
-2. **Avaliação Qualitativa & Empática:** Fornece um painel estruturado para o avaliador registrar observações manuais sobre o comportamento visual, cognitivo e interativo da interface.
+Atuando com o novo motor de **Pré-avaliação Automática Inteligente (v3.0)**, o plugin entrega o resultado o mais rápido possível:
+1. **Varredura Instantânea 360°:** Inspeciona o DOM em milissegundos e avalia automaticamente itens de Acessibilidade (WCAG 2.2 / ABNT NBR 17060), Heurísticas de UX e indícios de Jornadas/Service Blueprint.
+2. **Pré-preenchimento Automático:** O plugin atribui instantaneamente o Status (`✅ Adequado`, `⚠️ Atenção` ou `❌ Falha Crítica`) e gera a **Evidência descritiva** para cada critério sem que o usuário precise marcar checks manualmente. O avaliador apenas revisa o diagnóstico pronto ou complementa observações específicas antes de exportar.
 
 ---
 
@@ -58,7 +58,7 @@ Como esta extensão é distribuída junto ao repositório do projeto, a instala�
 
 ## 📊 Estrutura do Relatório Gerado (`.txt`)
 
-Ao concluir sua avaliação e clicar em **"Gerar Relatório Detalhado"**, o plugin compila as leituras automáticas e as notas heurísticas em um arquivo padronizado (`auditoria_ux_YYYY-MM-DD.txt`), ideal para anexar a issues no GitHub ou relatórios de QA:
+Ao abrir a extensão, ela realiza a auditoria e preenche todas as notas em tempo real. Ao clicar em **"Gerar Relatório Completo"**, o plugin compila o resumo executivo e a avaliação detalhada em um arquivo padronizado (`auditoria_CheckAAA_YYYY-MM-DD.txt`), pronto para anexar a relatórios de QA ou pull requests:
 
 ```text
 =====================================================
