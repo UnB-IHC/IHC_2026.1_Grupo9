@@ -1,50 +1,108 @@
-# Avaliador Heurístico Híbrido (Plugin)
+# Avaliador Heurístico Híbrido (Plugin & Ferramenta de UX)
 
-O Avaliador Heurístico Híbrido é uma extensão de navegador focada em facilitar auditorias de UX/UI baseadas nas **10 Heurísticas de Usabilidade de Jakob Nielsen**. 
+O **Avaliador Heurístico Híbrido** é uma extensão de navegador desenvolvida sob medida para conduzir auditorias completas de Experiência do Usuário (UX), Acessibilidade Digital (A11y) e Usabilidade. A ferramenta conecta inspeções técnicas automatizadas às **10 Heurísticas de Usabilidade de Jakob Nielsen** e às metodologias centrais do design centrado no usuário.
 
-O plugin atua de forma híbrida: realiza uma varredura automática no código da página em busca de problemas estruturais e de acessibilidade, ao mesmo tempo que fornece uma interface limpa para o avaliador registrar suas análises manuais. Ao final, a extensão compila todos os dados e exporta um relatório detalhado no formato `.txt`.
+Atuando de forma híbrida, o plugin une o melhor dos dois mundos:
+1. **Varredura Automática (Scanner DOM):** Identifica violações técnicas e estruturais de código em milissegundos.
+2. **Avaliação Qualitativa & Empática:** Fornece um painel estruturado para o avaliador registrar observações manuais sobre o comportamento visual, cognitivo e interativo da interface.
 
-## Funcionalidades
+---
 
-- **Inspeção Automática (Scanner DOM):** Lê a página ativa em tempo real e identifica:
-  - Presença de tags estruturais (`<h1>`, `<title>`).
-  - Configurações de responsividade (`<meta viewport>`).
-  - Definição de idioma (`<html lang>`).
-  - Problemas de acessibilidade (Imagens sem `alt`, inputs sem `label`).
-  - Gafes de navegação (Links vazios/mortos, links que forçam nova aba, botões sem texto).
-- **Checklist Heurístico Integrado:** Interface contendo as 10 heurísticas de Nielsen, acompanhadas de dicas práticas para guiar a avaliação qualitativa.
-- **Exportação Profissional:** Geração de um arquivo `.txt` contendo metadados da página (URL, Título, Data/Hora), os insights automáticos e as notas de severidade/evidências apontadas pelo avaliador.
+## 🔗 Integração com o Ecossistema de UX e IHC
 
-## Tecnologias Utilizadas
+A avaliação de uma interface não se limita a checar tags de código ou contraste; ela deve refletir a experiência de uso real. O relatório gerado pelo nosso plugin foi projetado para alimentar diretamente os principais artefatos de UX e Design do seu projeto:
 
-- **HTML5 & CSS3:** Estruturação e estilização da interface do popup.
-- **JavaScript (Vanilla):** Lógica de varredura de DOM, manipulação de interface e geração do relatório para download.
-- **Manifest V3:** Padrão moderno e seguro para desenvolvimento de extensões de navegadores baseados em Chromium.
+*   **[Personas & Jornadas Inclusivas](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/personas.md):** As falhas críticas encontradas na auditoria ajudam a validar ou atualizar as barreiras (*pain points*) enfrentadas por suas personas (ex: como um usuário que depende de navegação por teclado ou leitor de tela interage com o fluxo).
+*   **[Service Blueprint & Canvas](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/blueprint.md):** Os erros de usabilidade apontados na camada de *Frontstage* (pontos de contato visíveis com o cliente) evidenciam gargalos no atendimento ou na comunicação do serviço.
+*   **[Design Empático](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/design_empatico.md):** A ferramenta guia o avaliador a ir além da conformidade técnica, incentivando o teste de esforço cognitivo, flexibilidade de tempo e prevenção de erros.
+*   **[Teste de Usabilidade](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/teste_usabilidade.md):** A auditoria heurística com o plugin serve como excelente pré-teste para limpar erros graves de interface antes de levar o sistema para sessões de observação com usuários reais.
 
-## Como instalar e usar (Modo do Desenvolvedor)
+---
 
-Como esta extensão não está publicada na Chrome Web Store, você precisará instalá-la localmente utilizando o Modo do Desenvolvedor. O processo funciona no Google Chrome, Microsoft Edge, Brave ou Opera.
+## ⚡ Funcionalidades & Mapeamento Normativo
 
-### Passo 1: Obter os arquivos
-O código fonte do plugin encontra-se na pasta `plugin/` deste repositório. Você precisará dos arquivos `manifest.json`, `popup.html` e `popup.js`.
+O scanner automático inspeciona o DOM em tempo real e correlaciona as descobertas com as normas mais modernas de acessibilidade e engenharia web:
 
-### Passo 2: Carregar no Navegador
-1. Abra o seu navegador e digite `chrome://extensions/` (ou `edge://extensions/`) na barra de endereços.
-2. No canto superior direito, ative a chave **"Modo do desenvolvedor"**.
-3. Clique no botão **"Carregar sem compactação"** (Load unpacked) que aparecerá no canto superior esquerdo.
-4. Selecione a pasta onde os arquivos do plugin estão salvos.
-5. Pronto! A extensão aparecerá na sua lista. Recomendamos fixá-la clicando no ícone de "quebra-cabeça" na barra superior do navegador e depois no ícone de alfinete.
+| Verificação Automática do Plugin | Critério Normativo Atendido | Objetivo de UX & Acessibilidade |
+| :--- | :--- | :--- |
+| **Definição de Idioma (`<html lang>`)** | **WCAG 2.2** (3.1.1) / **eMAG 3.1** / **ABNT NBR 17060** | Garantir que leitores de tela e tradutores automáticos pronunciem e interpretem o texto com o sotaque correto. |
+| **Imagens sem atributo `alt`** | **WCAG 2.2** (1.1.1) / **eMAG 3.1** (6.1) / **ABNT NBR 17060** | Assegurar equivalência textual para usuários com deficiência visual ou em conexões lentas. |
+| **Inputs e Formulários sem `<label>`** | **WCAG 2.2** (3.3.2) / **eMAG 3.1** (7.1) / **ABNT NBR 17060** | Permitir que o usuário saiba exatamente o que preencher em cada campo ao navegar por tabulação ou voz. |
+| **Presença de Título (`<title>`) e `<h1>`** | **WCAG 2.2** (2.4.2) / **eMAG 3.1** (2.3) / **ABNT NBR 17060** | Orientar a navegação e estabelecer uma hierarquia de informação clara e previsível. |
+| **Links mortos ou sem texto descritivo** | **WCAG 2.2** (2.4.4) / **Heurística 2 (Nielsen)** | Evitar desorientação e garantir que o propósito de cada link seja compreendido fora de contexto. |
 
-## Como realizar uma avaliação
+> [!IMPORTANT]
+> **O Limite dos Testes Automáticos:** Ferramentas automatizadas capturam apenas **30% a 40%** das barreiras de acessibilidade (erros sintáticos e estruturais). Os outros **60%** dependem fundamentalmente da avaliação manual, do julgamento heurístico do avaliador e de testes práticos de navegação por teclado e leitores de tela.
 
-1. Navegue até a página ou sistema web que você deseja auditar.
-2. Clique no ícone da extensão na sua barra superior.
-3. Observe imediatamente o painel azul **"Dados Automáticos da Página"** para checar os erros estruturais encontrados pelo robô.
-4. Para cada uma das 10 heurísticas, selecione o **Status** (Adequado, Atenção, Falha Crítica, N/A) e escreva as **Evidências** no campo de texto logo abaixo.
-5. Clique no botão **"Gerar Relatório Detalhado (.txt)"**.
-6. O arquivo será baixado automaticamente com o nome `auditoria_ux_YYYY-MM-DD.txt`, pronto para ser anexado à documentação do seu projeto.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+*   **HTML5 & CSS3:** Estruturação semântica e estilização limpa da interface do popup.
+*   **JavaScript (Vanilla):** Motor de varredura de DOM de alta performance, manipulação de estado do checklist e gerador de arquivos em memória.
+*   **Manifest V3:** Padrão arquitetural mais recente, seguro e otimizado para extensões em navegadores Chromium.
+
+---
+
+## 🚀 Como instalar e usar (Modo do Desenvolvedor)
+
+Como esta extensão é distribuída junto ao repositório do projeto, a instalação é feita localmente:
+
+1. Obtenha os arquivos na pasta `plugin/` ([manifest.json](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/plugin/manifest.json), [popup.html](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/plugin/popup.html) e [popup.js](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/plugin/popup.js)).
+2. No seu navegador (Chrome, Edge, Brave ou Opera), acesse `chrome://extensions/` ou `edge://extensions/`.
+3. Ative a chave **"Modo do desenvolvedor"** no canto superior direito.
+4. Clique em **"Carregar sem compactação"** (Load unpacked) e selecione a pasta `plugin/`.
+5. Fixe a extensão na barra superior para acesso rápido durante suas inspeções.
+
+---
+
+## 📊 Estrutura do Relatório Gerado (`.txt`)
+
+Ao concluir sua avaliação e clicar em **"Gerar Relatório Detalhado"**, o plugin compila as leituras automáticas e as notas heurísticas em um arquivo padronizado (`auditoria_ux_YYYY-MM-DD.txt`), ideal para anexar a issues no GitHub ou relatórios de QA:
+
+```text
+=====================================================
+    RELATÓRIO DE AUDITORIA DE UX E ACESSIBILIDADE    
+    Gerado por: CheckAAA - Avaliador Híbrido         
+=====================================================
+
+DATA/HORA: 2026-06-28 15:30:00
+URL AUDITADA: https://exemplo-sistema.com.br/login
+TÍTULO DA PÁGINA: Portal do Cidadão - Acesso
+
+-----------------------------------------------------
+1. DIAGNÓSTICO AUTOMÁTICO (SCANNER DOM / WCAG 2.2)
+-----------------------------------------------------
+[OK] Atributo lang no HTML: pt-BR
+[FALHA] Imagens sem atributo 'alt': 2 encontradas
+[FALHA] Inputs de formulário sem 'label' associado: 1 encontrado
+[OK] Estrutura de cabeçalho principal (h1): Presente
+[ATENÇÃO] Links com abertura forçada em nova aba (_blank): 3 encontrados
+
+-----------------------------------------------------
+2. AVALIAÇÃO HEURÍSTICA QUALITATIVA (NIELSEN & UX)
+-----------------------------------------------------
+[H1. Visibilidade do status do sistema]
+Status: FALHA CRÍTICA
+Evidência: Ao clicar em 'Salvar', o sistema não exibe nenhum indicador de carregamento (spinner), deixando o usuário em dúvida se a ação foi processada.
+
+[H4. Consistência e Padrões]
+Status: ATENÇÃO
+Evidência: O botão de 'Cancelar' aparece em verde em algumas telas e em vermelho em outras, gerando confusão cognitiva.
+
+[H9. Ajuda a reconhecer, diagnosticar e recuperar de erros]
+Status: FALHA CRÍTICA
+Evidência: Mensagem de erro no formulário exibe apenas 'Erro 500', sem orientar o cidadão sobre como proceder ou oferecer um canal alternativo (Service Blueprint).
+
+=====================================================
+```
+
+---
+
 ## Referências Bibliográficas
 
-*   **W3C (World Wide Web Consortium).** *Web Content Accessibility Guidelines (WCAG)*. Diretrizes de Acessibilidade para Conteúdo Web. Disponível para consulta das recomendações internacionais de acessibilidade aplicadas neste checklist.
-*   **Governo Federal do Brasil.** *Guia de Boas Práticas para Acessibilidade Digital / eMAG (Modelo de Acessibilidade em Governo Eletrônico)*. Documento orientativo que adapta as diretrizes globais para o contexto digital brasileiro.
-*   **ABNT (Associação Brasileira de Normas Técnicas).** *Normas Brasileiras (NBR) de Acessibilidade*. Inclui diretrizes aplicáveis a interfaces humano-computador e acessibilidade (como ABNT NBR 15206 e correlatas).
+*   **W3C (World Wide Web Consortium).** *Web Content Accessibility Guidelines (WCAG 2.2)*. Recomendação oficial do W3C. Publicada em Outubro de 2023. Define os critérios de sucesso internacionais para acessibilidade web e móvel nos níveis A, AA e AAA.
+*   **ABNT (Associação Brasileira de Normas Técnicas).** *ABNT NBR 17060:2022 - Acessibilidade em aplicações web e móveis*. Norma técnica brasileira que estabelece os requisitos para tornar interfaces digitais acessíveis no contexto nacional.
+*   **ABNT (Associação Brasileira de Normas Técnicas).** *ABNT NBR 15206:2004 - Ergonomia da Interação Humano-Sistema*. Diretrizes de usabilidade e ergonomia em interfaces digitais.
+*   **Governo Federal do Brasil.** *eMAG - Modelo de Acessibilidade em Governo Eletrônico (Versão 3.1)*. Guia de boas práticas alinhado à legislação brasileira de inclusão digital.
+*   **NIELSEN, Jakob.** *10 Usability Heuristics for User Interface Design*. Nielsen Norman Group. Fundamentos para avaliação heurística e design de interfaces focadas no usuário.
