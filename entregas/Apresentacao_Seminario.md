@@ -308,6 +308,60 @@ Esses dados complementam e humanizam os números gerados pelos testes automatiza
 
 ---
 
+![bg right:40%](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80)
+## Perfil do Participante e Sessão
+
+- **Idade / Perfil:** 20 anos, Estudante. Baixa familiaridade com reformas ou compras de construção civil.
+- **Contexto:** Usa internet, mas nunca comprou material de construção online. Acesso sem necessidade urgente de reforma.
+- **Por que este perfil?** Expõe falhas de aprendizabilidade e clareza de vocabulário técnico (ex: "rejunte", "sifão") que um usuário experiente não notaria.
+- **Vídeo da Sessão:** A sessão foi gravada e o Think Aloud documentado.
+
+---
+
+![bg right:40%](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80)
+## As 5 Tarefas do Teste
+
+Cenários reais propostos durante o Think Aloud:
+1. Comprar uma lata de tinta acrílica fosca (≤ R$ 150).
+2. Encontrar suporte de TV e antena adequados.
+3. Descobrir regras de entrega para fora do DF.
+4. Salvar um produto para decidir depois.
+5. Encontrar um canal de contato direto com a loja.
+
+---
+
+![bg right:40%](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80)
+## Checklist de Acessibilidade (WCAG)
+
+Preenchido pelo observador em tempo real durante a execução das tarefas:
+- Contraste de texto/fundo é suficiente?
+- Navegação possível **apenas pelo teclado**?
+- Tamanho da fonte permite ampliação (zoom)?
+- Campos de busca/cadastro com rótulos e mensagens de erro claras?
+
+---
+
+![bg right:40%](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80)
+## A Entrevista Pós-Teste (Roteiro)
+
+Conduzida de forma semiestruturada ao fim do SUS para captar impressões subjetivas:
+- **Impressões Gerais:** O que mais gostou e o que mais dificultou o uso.
+- **Confiança e Clareza:** Houve dúvida se a busca trouxe o resultado certo? As informações de preço e frete eram claras?
+- **Acessibilidade:** Dificuldade com cores, tamanho de texto, navegação?
+- Se pudesse **mudar uma única coisa** no site, o que seria?
+
+---
+
+![bg right:40%](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80)
+## Referências Metodológicas
+
+Base teórica do nosso projeto e condução do teste de usabilidade:
+- **KRUG, Steve.** *Don't Make Me Think, Revisited.* (2014)
+- **NIELSEN, Jakob.** *Usability Engineering.* (1993)
+- **BROOKE, John.** *SUS: A 'Quick and Dirty' Usability Scale.* (1996)
+
+---
+
 ![bg right:40%](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80)
 ## Considerações Finais
 
