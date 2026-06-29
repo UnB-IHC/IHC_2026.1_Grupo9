@@ -1,11 +1,28 @@
-# Relatório de Auditoria e Estudo de Caso para PDF
-**Projeto:** CheckAAA - Avaliador Heurístico Híbrido v3.0  
-**Alvo da Avaliação:** Portal e E-commerce Castelo Forte  
-**Data de Emissão:** 28 de Junho de 2026  
+![Logo da UnB](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Webysther_20160322_-_Logo_UnB_%28sem_texto%29.svg/330px-Webysther_20160322_-_Logo_UnB_%28sem_texto%29.svg.png)
+
+**Universidade de Brasília**  
+Faculdade de Ciências e Tecnologia em Engenharias  
+Interação Humano Computador  
+
+# RELATÓRIO DE AUDITORIA E ESTUDO DE CASO: CASTELO FORTE
+
+**Grupo: 09**  
+Arthur Gomes Oliveira - 232013917  
+Davi Rodrigues Nunes - 232014413  
+Davi Ursulino de Oliveira - 241012202  
+Giovani de Oliveira Teodoro Coelho - 241032500  
+João Eduardo de Souza Leles - 241025274  
+João Guilherme Lima Veras Fonseca - 232014039  
+Luiz Henrique Pallavicini - 241012329  
+
+**Professor(a):**  
+Drª Rejane Maria da Costa Figueiredo  
+
+**Brasília - DF, 17 de maio de 2026**
 
 ---
 
-# Estudo de Caso: Auditoria Real do Site "Castelo Forte"
+# 1. Estudo de Caso: Auditoria Real do Site "Castelo Forte"
 
 Este documento apresenta o relatório real de auditoria gerado automaticamente pela nossa extensão **CheckAAA (Avaliador Heurístico Híbrido v3.0)** aplicado ao e-commerce e portal institucional do **Castelo Forte**.
 
@@ -13,15 +30,15 @@ O teste demonstra a eficácia da varredura instantânea na identificação de ba
 
 ---
 
-## 📌 Dados da Auditoria & Resumo Executivo
+## 1.1 Dados da Auditoria & Resumo Executivo
 
-> [!NOTE]
+> 📌 **Dados da Avaliação:**
 > **Data e Hora da Avaliação:** 28/06/2026 às 16:28:20  
 > **Página Auditada:** Castelo Forte | 35 anos construindo sonhos 10 Lojas + Site  
 > **URL Analisada:** [casteloforte.com.br](https://www.casteloforte.com.br/)  
 > **Ferramenta:** Extensão CheckAAA v3.0 (Scanner DOM + Diagnóstico Heurístico)
 
-### 📊 Painel Geral de Conformidade
+### 1.1.1 Painel Geral de Conformidade
 
 | Total Avaliado | ✅ Adequados | ⚠️ Pontos de Atenção | ❌ Falhas Críticas | Índice de Aprovação |
 | :---: | :---: | :---: | :---: | :---: |
@@ -29,9 +46,9 @@ O teste demonstra a eficácia da varredura instantânea na identificação de ba
 
 ---
 
-## 🔎 Diagnóstico Detalhado por Critério
+## 1.2 Diagnóstico Detalhado por Critério
 
-### 🖥️ Acessibilidade & Normas Técnicas (WCAG 2.2 / eMAG / ABNT NBR 17060)
+### 1.2.1 Acessibilidade & Normas Técnicas (WCAG 2.2 / eMAG / ABNT NBR 17060)
 
 #### 1. Idioma da Página (`<html lang>`)
 * **Categoria:** Acessibilidade
@@ -77,7 +94,7 @@ O teste demonstra a eficácia da varredura instantânea na identificação de ba
 
 ---
 
-### 🧠 Experiência do Usuário (UX) & Heurísticas de Nielsen
+### 1.2.2 Experiência do Usuário (UX) & Heurísticas de Nielsen
 
 #### 7. Visibilidade do Status do Sistema
 * **Categoria:** UX / Heurística 1
@@ -151,7 +168,7 @@ O teste demonstra a eficácia da varredura instantânea na identificação de ba
 
 ---
 
-### 🗺️ Jornadas, Personas & Service Blueprint
+### 1.2.3 Jornadas, Personas & Service Blueprint
 
 #### 17. Aderência a Tecnologias Assistivas (Personas)
 * **Categoria:** Personas & Jornada
@@ -169,12 +186,13 @@ O teste demonstra a eficácia da varredura instantânea na identificação de ba
 
 ---
 
-## 💡 Conclusão do Caso de Estudo
+## 1.3 Conclusão do Caso de Estudo
 
 A auditoria revela que, embora o site do **Castelo Forte** apresente boas práticas visuais e de suporte ao cliente (atingindo 12 itens adequados), ele possui **gargalos severos de acessibilidade digital estrutural** (4 falhas críticas). 
 
 A alta quantidade de imagens sem descrição alternativa (123) e botões sem rótulo (6) compromete diretamente a jornada de compra de clientes com deficiência visual, reforçando a importância indispensável do uso contínuo do **CheckAAA** no ciclo de desenvolvimento web.
 
+> 🌐 **Documentação Oficial CheckAAA:** Para acessar o Guia Completo, conhecer a metodologia, baixar a extensão v3.0 ou consultar outros checklists práticos, visite nosso portal oficial no GitHub Pages: **https://unb-ihc.github.io/IHC_2026.1_Grupo9/**
 
 ---
 *Relatório gerado para exportação em PDF pela equipe CheckAAA.*
