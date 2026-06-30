@@ -4,49 +4,55 @@ theme: default
 paginate: true
 style: |
   section {
-    background-image: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    color: #f8fafc;
+    background-color: #ffffff;
+    color: #334155;
     font-family: 'Inter', sans-serif;
+    font-size: 32px;
   }
   h1 {
-    color: #38bdf8;
-    font-size: 3em;
+    color: #0284c7;
+    font-size: 2.8em;
   }
   h2 {
-    color: #fbbf24;
-    border-bottom: 2px solid #334155;
+    color: #d97706;
+    border-bottom: 2px solid #e2e8f0;
     padding-bottom: 10px;
+    font-size: 1.6em;
   }
   h3 {
-    color: #f8fafc;
+    color: #334155;
   }
   ul, ol {
-    color: #cbd5e1;
+    color: #475569;
   }
   li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 1.4;
   }
   strong {
-    color: #f472b6;
+    color: #be185d;
   }
   blockquote {
-    border-left: 5px solid #38bdf8;
-    background-color: #1e293b;
+    border-left: 5px solid #0284c7;
+    background-color: #f1f5f9;
     padding: 10px 20px;
     border-radius: 5px;
-    color: #cbd5e1;
+    color: #475569;
   }
   table {
     width: 100%;
-    color: #f8fafc;
+    color: #334155;
+    font-size: 28px;
   }
   th {
-    background-color: #334155;
-    color: #38bdf8;
+    background-color: #e2e8f0;
+    color: #0284c7;
+    padding: 10px;
   }
   td {
-    background-color: #1e293b;
-    border: 1px solid #334155;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 10px;
   }
 ---
 
@@ -60,323 +66,323 @@ style: |
 <!-- _class: lead -->
 ![bg right:40%](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80)
 ## A Equipe
-**Grupo 9 - Interação Humano-Computador (IHC)**
-Universidade de Brasília (UnB)
+**Grupo 9 - IHC (UnB)**
 
-*Trabalhando na interseção entre Empatia, Acessibilidade Digital e Engenharia de Software.*
+Interseção entre:
+- **Empatia**
+- **Acessibilidade Digital**
+- **Engenharia de Software**
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80)
 ## O que é o CheckAAA?
 
-O **CheckAAA** não é apenas uma ferramenta, mas um **ecossistema completo**.
-Ele foi criado para integrar a experiência do usuário (UX), a acessibilidade (A11y) e a usabilidade em todas as etapas de desenvolvimento de um produto digital.
+Mais que uma ferramenta, um **ecossistema**.
 
-O objetivo é transformar a acessibilidade de um requisito final para uma cultura desde o princípio (Shift-Left).
+- **Objetivo:** Integrar UX e Acessibilidade (A11y).
+- **Cultura Shift-Left:** Acessibilidade desde o princípio, não no final.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80)
-## Os 3 Pilares do CheckAAA
+## Os 3 Pilares
 
-Nosso projeto está estruturado em três frentes essenciais:
-1. **O Guia do Usuário:** Documentação e checklists para todas as etapas.
-2. **O Plugin CheckAAA:** Uma ferramenta ágil para auditorias automatizadas.
-3. **Estudo de Caso Prático:** A aplicação de todo o nosso arsenal na análise do site *Castelo Forte*.
+1. **O Guia do Usuário:** Documentação e checklists.
+2. **O Plugin CheckAAA:** Ferramenta de auditoria automatizada.
+3. **Estudo de Caso:** Aplicação prática no site *Castelo Forte*.
 
 ---
 
 <!-- _class: lead -->
 # Pilar 1: O Guia Completo
-*Diretrizes e Checklists Acionáveis*
+*Diretrizes Acionáveis*
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80)
 ## UX & Design Empático
 
-A acessibilidade começa na prancheta de desenho:
-- **Contraste e Cores:** Garantir proporções mínimas (4.5:1).
-- **Áreas de Toque:** Projetar elementos interativos adequados.
-- **Design Empático:** Entender a carga emocional gerada por uma barreira digital. O usuário não deve se adaptar ao sistema; o sistema deve acolher o usuário.
+Acessibilidade na prancheta:
+- **Contraste:** Proporção mínima de 4.5:1.
+- **Toque:** Áreas interativas amplas.
+- **Empatia:** O sistema deve acolher o usuário, e não o contrário.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80)
-## Construção de Personas Inclusivas
+## Personas Inclusivas
 
-O erro comum é focar apenas no "usuário médio ideal". O CheckAAA exige:
-- **Recrutamento Heterogêneo:** Incluir no planejamento pessoas com deficiências permanentes, temporárias e situacionais.
-- **Fuga do Estereótipo:** A deficiência é um traço da condição de uso da interface, não um heroísmo.
-- **Mapeamento de Assistência:** Saber como a persona interage.
+Fugir do "usuário médio":
+- **Diversidade:** Pessoas com deficiências permanentes ou temporárias.
+- **Sem Estereótipos:** Focar na condição de uso.
+- **Assistência:** Mapear tecnologias assistivas (ex: leitores de tela).
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80)
 ## Service Blueprint e Jornadas
 
-Mapear a jornada de ponta a ponta, do frontstage ao backstage:
-- **Canais Alternativos:** Se a barreira digital surgir, há um plano B humano equitativo?
-- **Esforço Cognitivo:** Redução de passos exigidos para diminuir a carga de memorização do usuário.
-- **Evidências Físicas e Digitais:** Múltiplos formatos para documentos gerados na jornada.
+Mapeamento de ponta a ponta:
+- **Canais Alternativos:** Há um "Plano B" humano?
+- **Esforço Cognitivo:** Reduzir passos e memorização.
+- **Múltiplos Formatos:** Evidências em texto, áudio e vídeo.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=800&q=80)
-## Desenvolvimento Web e Engenharia
+## Desenvolvimento Web
 
-A tradução da empatia em **código limpo**:
-- **HTML Semântico:** Uso correto de landmarks (`<main>`, `<nav>`, `<header>`).
-- **Acessibilidade por Teclado:** Controle de foco (`outline`) e eliminação de armadilhas (traps).
-- **WAI-ARIA:** A regra de ouro é *só usar ARIA quando necessário*, priorizando componentes nativos do HTML.
+Traduzindo empatia em **código**:
+- **HTML Semântico:** Uso de `<main>`, `<nav>`.
+- **Teclado:** Navegação fluida e sem armadilhas.
+- **WAI-ARIA:** Usar apenas quando necessário.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80)
-## Geração de Conteúdo e UX Writing
+## Geração de Conteúdo
 
-Garantir que a mensagem chegue de forma clara para todos:
-- **Plain Language:** Linguagem simples, frases curtas, evitando jargões técnicos.
-- **Texto Alternativo (ALT):** Descrições precisas para imagens informativas.
-- **Multimídia:** Exigência de legendas fechadas (closed captions), audiodescrição e alternativas transcritas.
+Mensagens claras para todos:
+- **Plain Language:** Linguagem simples e direta.
+- **Texto Alternativo (ALT):** Descrições precisas para imagens.
+- **Multimídia:** Legendas e audiodescrição obrigatórias.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80)
-## Gestão de Projetos Ágeis (Scrum)
+## Gestão Ágil (Scrum)
 
-Acessibilidade não é "puxadinho" no final do ciclo:
-- **Definition of Done (DoD):** Uma tarefa só está "pronta" se for aprovada nos critérios de acessibilidade.
-- **Orçamento e Priorização:** Bugs de acessibilidade são falhas críticas, não "melhorias futuras".
-- **QA Contínuo:** Inserção de testes (manuais e automatizados) no pipeline de CI/CD.
+Acessibilidade não é "puxadinho":
+- **Definition of Done:** Tarefa "pronta" exige acessibilidade.
+- **Priorização:** Falhas de A11y são críticas, não melhorias.
+- **QA Contínuo:** Testes em todas as sprints.
 
 ---
 
 <!-- _class: lead -->
 # Pilar 2: A Extensão CheckAAA
-*Avaliador Automático v3.0*
+*Avaliador Automático*
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80)
-## O Plugin: Para que serve?
+## Para que serve?
 
-A extensão CheckAAA v3.0 funciona diretamente no navegador e realiza uma **auditoria instantânea** na página em exibição.
+Auditoria instantânea no navegador.
 
-Ela varre o Document Object Model (DOM) em busca de infrações, permitindo que desenvolvedores corrijam falhas antes delas chegarem ao usuário final.
+- Varredura em tempo real no **DOM**.
+- Permite correções antes do lançamento.
+- Direcionada a desenvolvedores e QA.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80)
-## Base Normativa do Plugin
+## Base Normativa
 
-As verificações da extensão não são baseadas em achismos. Ela cruza dados com:
-- **WCAG 2.2:** Diretrizes Internacionais de Acessibilidade.
-- **ABNT NBR 17060:** Normas Brasileiras aplicadas a interfaces web.
-- **eMAG:** Modelo de Acessibilidade em Governo Eletrônico.
-- **Heurísticas de Nielsen:** As 10 regras fundamentais de usabilidade.
+Dados cruzados com padrões rigorosos:
+- **WCAG 2.2** (Internacional)
+- **ABNT NBR 17060** (Brasil)
+- **eMAG** (Governo Eletrônico)
+- **Heurísticas de Nielsen**
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80)
-## O Diagnóstico Rápido
+## Diagnóstico Rápido
 
-Após rodar a varredura, o plugin exibe um painel de controle (dashboard) categorizando os critérios em 3 níveis:
-- ✅ **Adequados:** Tudo certo!
-- ⚠️ **Pontos de Atenção:** Sugestões que melhoram a experiência.
-- ❌ **Falhas Críticas:** Barreiras excludentes graves que demandam correção imediata.
+O painel exibe 3 categorias de infrações:
+- ✅ **Adequados:** Sem erros.
+- ⚠️ **Pontos de Atenção:** Alertas de melhoria.
+- ❌ **Falhas Críticas:** Barreiras excludentes.
 
 ---
 
 <!-- _class: lead -->
 # Pilar 3: Estudo de Caso
-*Auditoria no site Castelo Forte*
+*Castelo Forte*
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80)
 ## O Alvo: Castelo Forte
 
-**Página Auditada:** Portal e E-commerce Castelo Forte
-**Contexto:** Empresa com 35 anos de atuação no mercado de construção, contando com 10 lojas físicas e vendas online.
-
-Aplicamos nossa extensão no site principal para verificar como a marca recebe seus usuários no ambiente digital.
+- **Contexto:** 35 anos de mercado (construção civil).
+- **Alvo:** Portal principal e E-commerce.
+- **Objetivo:** Verificar a acessibilidade e recepção aos usuários no ambiente digital.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80)
-## Resumo Executivo: Índice de Aprovação
+## Índice de Aprovação
 
-Foram avaliados 18 critérios fundamentais de UX e acessibilidade.
+Avaliação de 18 critérios fundamentais:
 
-- **✅ Adequados:** 12
-- **⚠️ Pontos de Atenção:** 2
-- **❌ Falhas Críticas:** 4
+- ✅ **Adequados:** 12
+- ⚠️ **Atenção:** 2
+- ❌ **Críticas:** 4
 
-**Índice de Aprovação Geral:** 66,6%
+**Aprovação Geral: 66,6%**
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80)
-## Pontos Positivos Encontrados
+## Pontos Positivos
 
-O site demonstrou acertar em algumas heurísticas fundamentais de usabilidade:
-- **Visibilidade de Status:** Uso eficiente de barras de progresso e spinners.
-- **Linguagem Natural:** Evita expor códigos de erros brutos aos clientes.
-- **Controle e Liberdade:** Botões claros para voltar e cancelar ações indesejadas.
-- **Design Minimalista:** Excelente adaptação para dispositivos móveis (Responsividade).
+- **Status Visível:** Barras de progresso e spinners.
+- **Linguagem Natural:** Ausência de códigos de erro técnicos.
+- **Liberdade:** Facilidade para cancelar ações.
+- **Responsividade:** Boa adaptação móvel.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80)
 ## Pontos de Atenção
 
-Fatores que não quebram o site, mas atrasam a experiência do usuário:
-- **Hierarquia de Cabeçalhos:** Múltiplos `<h1>` e saltos lógicos nas tags de título.
-- **Falta de Aceleradores:** Ausência do link *"Pular para o conteúdo principal"*. Isso obriga quem navega por teclado a passar repetidamente por todos os menus superiores.
+Fatores que atrasam a experiência:
+- **Hierarquia:** Saltos nas tags de cabeçalho (`<h1>`, `<h2>`).
+- **Aceleradores:** Falta do link *"Pular para o conteúdo"*. Exige repetição excessiva pelo teclado.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80)
-## As Falhas Críticas (O Alerta Vermelho)
+## Falhas Críticas (Alerta Vermelho)
 
-Infelizmente, identificamos que o site possui **gargalos severos** de acessibilidade estrutural, tornando a navegação quase impossível para usuários com limitações visuais.
-
-Vamos detalhar as 4 infrações críticas mapeadas.
+Identificamos **gargalos severos** de estrutura.
+A navegação se torna quase impossível para usuários com limitações visuais.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=800&q=80)
-## Falha Crítica 1: Estrutura Semântica
+## Falha Crítica 1: Estrutura
 
-**Ausência de Marcos Principais (Landmarks)**
-O código carece de uma estruturação semântica básica (como a tag `<main>`). 
+**Ausência de Landmarks**
+Falta da tag `<main>`.
 
-*Por que isso é ruim?* Sem isso, tecnologias assistivas (leitores de tela) não conseguem identificar onde o conteúdo principal da página começa, gerando desorientação imediata.
+*Impacto:* Leitores de tela não acham o conteúdo principal. Desorientação imediata.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80)
-## Falha Crítica 2: Imagens Sem ALT Text
+## Falha Crítica 2: Imagens Sem ALT
 
-**Onde ocorreu:** Encontramos **123 imagens** sem o atributo `alt` (texto alternativo).
+**123 imagens** de produtos sem texto alternativo.
 
-*Por que isso é ruim?* Num e-commerce de catálogo extenso, o usuário cego depende do `alt` para saber o que está na foto. Uma imagem de produto sem texto alternativo significa, na prática, uma vitrine escondida para esse consumidor.
+*Impacto:* Para usuários cegos, é como uma vitrine vazia. Produtos invisíveis.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80)
-## Falha Crítica 3: Campos sem Label
+## Falha Crítica 3: Campos Sem Label
 
-**Onde ocorreu:** 7 campos de formulário (incluindo busca e cadastro) não possuíam rótulos `<label>` associados.
+**7 campos de formulário** (incluindo busca) sem `<label>`.
 
-*Por que isso é ruim?* Sem a identificação em código, o usuário que usa comandos de voz ou leitor de tela foca na caixa de texto e não sabe o que deve digitar lá dentro.
+*Impacto:* O usuário foca no campo, mas o leitor de voz não sabe dizer o que digitar lá.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80)
-## Falha Crítica 4: Botões Inativos para Leitores de Tela
+## Falha Crítica 4: Botões Inativos
 
-**Onde ocorreu:** 6 botões (ícones de carrinho, pesquisa, redes sociais) não possuíam texto visível nem `aria-label`.
+**6 botões** (ex: carrinho, pesquisa) lidos apenas como "Botão".
 
-*Por que isso é ruim?* O leitor de tela lê apenas "Botão". O usuário é forçado a tentar adivinhar a ação que será disparada ao clicar, quebrando a autonomia e a confiança.
+*Impacto:* Quebra a confiança. O usuário precisa "adivinhar" o que o botão faz.
 
 ---
 
 <!-- _class: lead -->
-# Mapeamento do Fator Humano
-*Teste de Usabilidade e Think Aloud*
+# Fator Humano
+*Testes e Usabilidade*
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80)
-## O Teste de Usabilidade
+## Teste de Usabilidade
 
-Além do plugin automático, aplicamos protocolos reais de testes com usuários:
-- **Perfil Testado:** Jovem, sem experiência com compras de material de construção, simulando uma barreira de literacia no domínio.
-- **Abordagem:** Sessão cronometrada usando o método **Think Aloud** (pensar em voz alta), identificando gargalos na jornada.
+Protocolos reais (*Think Aloud*):
+- Identificar gargalos na jornada.
+- Compreender sentimentos de frustração.
+- Validar as falhas detectadas pelo plugin.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80)
 ## O Questionário SUS
 
-Ao final das tarefas práticas, o usuário respondeu à **System Usability Scale (SUS)**.
-São 10 afirmações para medir de 0 a 100 a carga de esforço, a confiança do usuário no sistema e a fluidez geral da experiência do site.
-Esses dados complementam e humanizam os números gerados pelos testes automatizados.
+System Usability Scale:
+- **10 afirmações** para medir confiança, esforço e fluidez.
+- Humaniza os dados numéricos do software.
+- Feedback focado na satisfação.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80)
-## Perfil do Participante e Sessão
+## Perfil do Participante
 
-- **Idade / Perfil:** 20 anos, Estudante. Baixa familiaridade com reformas ou compras de construção civil.
-- **Contexto:** Usa internet, mas nunca comprou material de construção online. Acesso sem necessidade urgente de reforma.
-- **Por que este perfil?** Expõe falhas de aprendizabilidade e clareza de vocabulário técnico (ex: "rejunte", "sifão") que um usuário experiente não notaria.
-- **Vídeo da Sessão:** A sessão foi gravada e o Think Aloud documentado.
+- **Estudante, 20 anos:** Sem experiência em construção.
+- **Por que?** Avaliar a "aprendizabilidade" e o vocabulário (ex: "rejunte").
+- Sessão gravada e narrada.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80)
 ## As 5 Tarefas do Teste
 
-Cenários reais propostos durante o Think Aloud:
-1. Comprar uma lata de tinta acrílica fosca (≤ R$ 150).
-2. Encontrar suporte de TV e antena adequados.
-3. Descobrir regras de entrega para fora do DF.
-4. Salvar um produto para decidir depois.
-5. Encontrar um canal de contato direto com a loja.
+1. Comprar tinta acrílica.
+2. Achar suporte de TV.
+3. Verificar frete fora do DF.
+4. Salvar produto para depois.
+5. Contatar a loja.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80)
-## Checklist de Acessibilidade (WCAG)
+## Checklist WCAG
 
-Preenchido pelo observador em tempo real durante a execução das tarefas:
-- Contraste de texto/fundo é suficiente?
-- Navegação possível **apenas pelo teclado**?
-- Tamanho da fonte permite ampliação (zoom)?
-- Campos de busca/cadastro com rótulos e mensagens de erro claras?
+Avaliado em tempo real:
+- Contraste visual.
+- Navegação exclusiva por teclado.
+- Ampliação (Zoom).
+- Rótulos em formulários.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80)
-## A Entrevista Pós-Teste (Roteiro)
+## A Entrevista Pós-Teste
 
-Conduzida de forma semiestruturada ao fim do SUS para captar impressões subjetivas:
-- **Impressões Gerais:** O que mais gostou e o que mais dificultou o uso.
-- **Confiança e Clareza:** Houve dúvida se a busca trouxe o resultado certo? As informações de preço e frete eram claras?
-- **Acessibilidade:** Dificuldade com cores, tamanho de texto, navegação?
-- Se pudesse **mudar uma única coisa** no site, o que seria?
+Mapear a subjetividade:
+- O que mais dificultou o uso?
+- As informações eram claras e geravam confiança?
+- **Pergunta chave:** *Se pudesse mudar algo, o que seria?*
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80)
-## Referências Metodológicas
+## Referências
 
-Base teórica do nosso projeto e condução do teste de usabilidade:
-- **KRUG, Steve.** *Don't Make Me Think, Revisited.* (2014)
-- **NIELSEN, Jakob.** *Usability Engineering.* (1993)
-- **BROOKE, John.** *SUS: A 'Quick and Dirty' Usability Scale.* (1996)
+Base teórica sólida:
+- **Steve Krug:** *Don't Make Me Think* (2014)
+- **Jakob Nielsen:** *Usability Engineering* (1993)
+- **John Brooke:** *SUS Scale* (1996)
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80)
 ## Considerações Finais
 
-O caso "Castelo Forte" prova que a acessibilidade vai muito além da estética:
-- Um site bonito e responsivo ainda pode excluir parcelas enormes do mercado consumidor.
-- Resolver problemas após o site estar no ar é custoso e doloroso.
-- A união da **extensão CheckAAA** com a robustez do **Guia do Usuário** previne erros crônicos.
+Acessibilidade não é estética.
+- Design bonito pode ser muito excludente.
+- Corrigir bugs depois é caro.
+- A **prevenção** (Guia + Extensão) é o melhor caminho.
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80)
-## O CheckAAA é um processo contínuo
+## Um processo contínuo
 
-Ferramentas automáticas detectam **apenas 30 a 40%** das barreiras de acessibilidade.
-Os outros 60% dependem da equipe usar nosso guia para conduzir testes com humanos reais, construir personas diversas e aplicar Service Blueprints inclusivos.
+- Ferramentas detectam apenas **30% a 40%** das barreiras.
+- Os outros 60% dependem do fator humano.
+- O Guia e o Plugin precisam andar juntos.
 
 ---
 
@@ -385,4 +391,3 @@ Os outros 60% dependem da equipe usar nosso guia para conduzir testes com humano
 **Perguntas e Debates**
 
 *Grupo 9 - IHC*
-<br><br>
