@@ -6,14 +6,18 @@
 
 ## Gravação da Sessão
 
-<iframe
-  width="100%"
-  style="aspect-ratio: 16/9; border: none; border-radius: 8px;"
-  src="https://unbbr-my.sharepoint.com/personal/241012329_aluno_unb_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F241012329_aluno_unb_br%2FDocuments%2FGravações%2FReunião%20com%20Luiz%20Henrique%20Pallavicini-20260702_170515-Gravação%20de%20Reunião%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaada1456-7b68-49c5-9ae2-556f47faea9c"
-  title="Teste de Usabilidade — Castelo Forte"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+> [!NOTE]
+> **Aviso sobre a exibição do vídeo:**  
+> Por políticas de segurança corporativa do Microsoft 365 e OneDrive institucional da UnB (`login.microsoftonline.com`), navegadores modernos (Firefox, Chrome, Edge) bloqueiam a exibição incorporada direta via `iframe` para prevenir ataques de *clickjacking* (*X-Frame-Options: SAMEORIGIN*).
+
+Para assistir à gravação completa da sessão de Teste de Usabilidade (com tela e áudio do usuário), acesse o vídeo diretamente no portal da UnB pelo botão abaixo:
+
+<div align="center" style="margin: 24px 0;">
+  <a href="https://unbbr-my.sharepoint.com/personal/241012329_aluno_unb_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F241012329_aluno_unb_br%2FDocuments%2FGrava%C3%A7%C3%B5es%2FReuni%C3%A3o%20com%20Luiz%20Henrique%20Pallavicini-20260702_170515-Grava%C3%A7%C3%A3o%20de%20Reuni%C3%A3o%2Emp4" target="_blank" style="background-color: #0066cc; color: #ffffff; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.15);">
+    ▶️ Assistir à Gravação no Microsoft Stream (UnB)
+  </a>
+</div>
+
 
 ---
 
