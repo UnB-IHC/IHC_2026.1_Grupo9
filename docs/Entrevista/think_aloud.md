@@ -7,17 +7,10 @@
 ## Gravação da Sessão
 
 > [!NOTE]
-> **Aviso sobre a exibição do vídeo:**  
-> Por políticas de segurança corporativa do Microsoft 365 e OneDrive institucional da UnB (`login.microsoftonline.com`), navegadores modernos (Firefox, Chrome, Edge) bloqueiam a exibição incorporada direta via `iframe` para prevenir ataques de *clickjacking* (*X-Frame-Options: SAMEORIGIN*).
+> **Acesso à Gravação:**  
+> Devido às políticas de segurança corporativa do Microsoft Stream da UnB (`login.microsoftonline.com`), a reprodução incorporada na página é bloqueada pelos navegadores. Para assistir ao vídeo completo com áudio e tela, clique no link de redirecionamento abaixo:
 
-Para assistir à gravação completa da sessão de Teste de Usabilidade (com tela e áudio do usuário), acesse o vídeo diretamente no portal da UnB pelo botão abaixo:
-
-<div align="center" style="margin: 24px 0;">
-  <a href="https://unbbr-my.sharepoint.com/personal/241012329_aluno_unb_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F241012329_aluno_unb_br%2FDocuments%2FGrava%C3%A7%C3%B5es%2FReuni%C3%A3o%20com%20Luiz%20Henrique%20Pallavicini-20260702_170515-Grava%C3%A7%C3%A3o%20de%20Reuni%C3%A3o%2Emp4" target="_blank" style="background-color: #0066cc; color: #ffffff; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.15);">
-    ▶️ Assistir à Gravação no Microsoft Stream (UnB)
-  </a>
-</div>
-
+### 👉 [**Clique aqui para abrir e assistir à Gravação do Teste de Usabilidade no Microsoft Stream (UnB)**](https://unbbr-my.sharepoint.com/personal/241012329_aluno_unb_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F241012329_aluno_unb_br%2FDocuments%2FGrava%C3%A7%C3%B5es%2FReuni%C3%A3o%20com%20Luiz%20Henrique%20Pallavicini-20260702_170515-Grava%C3%A7%C3%A3o%20de%20Reuni%C3%A3o%2Emp4)
 
 ---
 
