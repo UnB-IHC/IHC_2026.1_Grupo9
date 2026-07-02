@@ -161,42 +161,33 @@ Acessibilidade não é "puxadinho":
 ---
 
 <!-- _class: lead -->
-# Pilar 2: A Extensão CheckAAA
-*Avaliador Automático*
-
----
-
-![bg right:40%](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80)
-## Para que serve?
-
-Auditoria instantânea no navegador.
-
-- Varredura em tempo real no **DOM**.
-- Permite correções antes do lançamento.
-- Direcionada a desenvolvedores e QA.
+# Inspeção Manual Prática
+*O Coração da Avaliação CheckAAA*
 
 ---
 
 ![bg right:40%](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80)
-## Base Normativa
+## Metodologia Normativa
 
-Dados cruzados com padrões rigorosos:
-- **WCAG 2.2** (Internacional)
-- **ABNT NBR 17060** (Brasil)
-- **eMAG** (Governo Eletrônico)
-- **Heurísticas de Nielsen**
+A avaliação guiada por humanos garante profundidade:
+
+- **Base Normativa:** WCAG 2.2, eMAG 3.1 e ABNT NBR 17060.
+- **Precisão Heurística:** Identifica barreiras contextuais e de semântica que automações não compreendem.
+- **Jornada Real:** Foco na experiência vivida pelas personas.
+
+---
+
+![bg right:40%](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80)
+## Ferramenta Auxiliar: O Plugin
+
+A automação como **apoio complementar** à análise manual:
+
+- **Triagem Preliminar:** Extensão no navegador para varreduras rápidas no DOM.
+- **Suporte ao QA:** Auxilia desenvolvedores a encontrar contrastes e sintaxes ausentes em tempo real.
+- **Caráter Auxiliar:** Atua apenas como suporte secundário, *não substituindo* a inspeção humana do Guia CheckAAA.
 
 ---
 
-![bg right:40%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80)
-## Diagnóstico Rápido
-
-O painel exibe 3 categorias de infrações:
-- ✅ **Adequados:** Sem erros.
-- ⚠️ **Pontos de Atenção:** Alertas de melhoria.
-- ❌ **Falhas Críticas:** Barreiras excludentes.
-
----
 
 <!-- _class: lead -->
 # Pilar 3: Estudo de Caso
