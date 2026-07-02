@@ -32,7 +32,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: false
-      clickable_checkbox: true
+      clickable_checkbox: false
 
 nav:
   - Início: index.md
@@ -50,7 +50,8 @@ nav:
     - Teste de Usabilidade: teste_usabilidade.md
     - Nosso Plugin (Ferramenta Híbrida): ferramentas.md
     - Template do Relatório: relatorio_template.md
-    - Estudo de Caso (Castelo Forte): relatorio_castelo_forte.md
+    - Avaliação Manual (Castelo Forte): avaliacao_castelo_forte.md
+    - Avaliação Automatizada com Plugin (Castelo Forte): relatorio_plugin.md
   - Pesquisa & Entrevistas:
     - Think Aloud: Entrevista/think_aloud.md
     - Roteiro: Entrevista/roteiro.md

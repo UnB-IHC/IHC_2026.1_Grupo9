@@ -1,4 +1,4 @@
-# Estudo de Caso: Auditoria Real do Site "Castelo Forte"
+# Estudo de Caso: Auditoria Automatizada com Plugin — Site "Castelo Forte"
 
 Este documento apresenta o relatório real de auditoria gerado automaticamente pela nossa extensão **CheckAAA (Avaliador Heurístico Híbrido v3.0)** aplicado ao e-commerce e portal institucional do **Castelo Forte**.
 
