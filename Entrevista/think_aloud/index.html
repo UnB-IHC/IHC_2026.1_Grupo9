@@ -1,0 +1,1726 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guia e checklist prático para implementação de UX, Acessibilidade (A11y) e Usabilidade.">
+      
+      
+        <meta name="author" content="Grupo 09">
+      
+      
+      
+        <link rel="prev" href="../../relatorio_plugin/">
+      
+      
+        <link rel="next" href="../roteiro/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Think Aloud - CheckAAA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#think-aloud" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="CheckAAA" class="md-header__button md-logo" aria-label="CheckAAA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CheckAAA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Think Aloud
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UnB-IHC/IHC_2026.1_Grupo9" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2026.1_Grupo9
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CheckAAA" class="md-nav__button md-logo" aria-label="CheckAAA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CheckAAA
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UnB-IHC/IHC_2026.1_Grupo9" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2026.1_Grupo9
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência do Usuário (UX) & Design
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência do Usuário (UX) & Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design & Interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design_empatico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Empático
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personas & Jornadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blueprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Blueprint & Canvas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento & Engenharia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Desenvolvimento & Engenharia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../desenvolvimentoweb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geração de Conteúdo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao_projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Projetos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação, Usabilidade & Ferramentas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avaliação, Usabilidade & Ferramentas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../heuristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas de Nielsen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teste_usabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teste de Usabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nosso Plugin (Ferramenta Híbrida)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relatorio_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template do Relatório
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao_castelo_forte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Manual (Castelo Forte)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relatorio_plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Automatizada com Plugin (Castelo Forte)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa & Entrevistas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pesquisa & Entrevistas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Think Aloud
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Think Aloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gravacao-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gravação da Sessão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relatorio-de-teste-de-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RELATÓRIO DE TESTE DE USABILIDADE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo Executivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-informacoes-gerais-do-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Informações Gerais do Teste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-perfil-do-usuario-alvo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Perfil do Usuário-Alvo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-roteiro-de-conducao-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Roteiro de Condução da Sessão
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Roteiro de Condução da Sessão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-abertura-e-recepcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Abertura e Recepção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-transicao-entre-tarefas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Transição entre Tarefas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tarefas-do-teste-de-usabilidade-metricas-e-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tarefas do Teste de Usabilidade (Métricas e Resultados)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Tarefas do Teste de Usabilidade (Métricas e Resultados)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indicadores-de-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicadores de Desempenho:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-achados-de-observacao-e-entrevista-pos-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Achados de Observação e Entrevista Pós-Teste
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Achados de Observação e Entrevista Pós-Teste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-e-navegacao-insights-das-tarefas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comportamento e Navegação (Insights das Tarefas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrevista-pos-teste-sintese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrevista Pós-Teste (Síntese)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-avaliacao-sus-system-usability-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Avaliação SUS (System Usability Scale)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-checklist-rapido-de-acessibilidade-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Checklist Rápido de Acessibilidade (WCAG)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conclusao-final-e-recomendacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Conclusão Final e Recomendações
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roteiro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roteiro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gravacao-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gravação da Sessão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relatorio-de-teste-de-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RELATÓRIO DE TESTE DE USABILIDADE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo Executivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-informacoes-gerais-do-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Informações Gerais do Teste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-perfil-do-usuario-alvo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Perfil do Usuário-Alvo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-roteiro-de-conducao-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Roteiro de Condução da Sessão
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Roteiro de Condução da Sessão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-abertura-e-recepcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Abertura e Recepção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-transicao-entre-tarefas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Transição entre Tarefas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tarefas-do-teste-de-usabilidade-metricas-e-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tarefas do Teste de Usabilidade (Métricas e Resultados)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Tarefas do Teste de Usabilidade (Métricas e Resultados)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indicadores-de-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicadores de Desempenho:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-achados-de-observacao-e-entrevista-pos-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Achados de Observação e Entrevista Pós-Teste
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Achados de Observação e Entrevista Pós-Teste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-e-navegacao-insights-das-tarefas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comportamento e Navegação (Insights das Tarefas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrevista-pos-teste-sintese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrevista Pós-Teste (Síntese)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-avaliacao-sus-system-usability-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Avaliação SUS (System Usability Scale)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-checklist-rapido-de-acessibilidade-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Checklist Rápido de Acessibilidade (WCAG)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conclusao-final-e-recomendacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Conclusão Final e Recomendações
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="think-aloud">Think Aloud</h1>
+<blockquote>
+<p>Técnica de verbalização do pensamento utilizada durante o teste de usabilidade com o site <a href="https://casteloforte.com.br">casteloforte.com.br</a>.</p>
+</blockquote>
+<hr />
+<h2 id="gravacao-da-sessao">Gravação da Sessão</h2>
+<blockquote>
+<p>[!NOTE]
+<strong>Acesso à Gravação:</strong><br />
+Devido às políticas de segurança corporativa do Microsoft Stream da UnB (<code>login.microsoftonline.com</code>), a reprodução incorporada na página é bloqueada pelos navegadores. Para assistir ao vídeo completo com áudio e tela, clique no link de redirecionamento abaixo:</p>
+</blockquote>
+<iframe width="1307" height="735" src="https://www.youtube.com/embed/YcS-Mfis094" title="Reunião com Luiz Henrique Pallavicini - Gravação de Reunião" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr />
+<h2 id="relatorio-de-teste-de-usabilidade">RELATÓRIO DE TESTE DE USABILIDADE</h2>
+<p><strong>Universidade de Brasília (UnB)</strong><br />
+<strong>Disciplina:</strong> Interação Humano-Computador (IHC) - 2026.1 
+<strong>Prof.ª:</strong> Rejane M. C. Figueiredo<br />
+<strong>Site avaliado:</strong> Castelo Forte (<a href="https://casteloforte.com.br">casteloforte.com.br</a>)</p>
+<hr />
+<h2 id="resumo-executivo">Resumo Executivo</h2>
+<p>O presente relatório detalha os resultados do Teste de Usabilidade realizado no site do home center Castelo Forte. O objetivo foi avaliar a facilidade de uso, a clareza das informações e a eficiência da interface para o público-alvo da loja. O teste contou com a participação de um usuário de 49 anos, com perfil de comprador frequente e responsável por reformas.</p>
+<p>A avaliação revelou um sistema de usabilidade satisfatória, refletido no escore SUS de 72,5 (classificado como Aceitável) e em uma taxa de sucesso de 80% na execução das tarefas. O usuário demonstrou facilidade em localizar produtos técnicos e navegar pelas categorias, com um tempo médio de 51,4 segundos por tarefa.</p>
+<p>No entanto, o estudo identificou que, para este perfil, o site atua primariamente como um catálogo de consulta técnica. Fatores como a falta de clareza nas regras de frete (que gerou a única falha do teste), incertezas sobre o estoque e a forte preferência por negociar descontos via WhatsApp representam os principais atritos. Observaram-se também falhas em critérios de acessibilidade (WCAG), como ausência de navegação por teclado e quebra de layout com zoom.</p>
+<hr />
+<h2 id="1-informacoes-gerais-do-teste">1. Informações Gerais do Teste</h2>
+<ul>
+<li><strong>Site avaliado:</strong> <a href="https://casteloforte.com.br">casteloforte.com.br</a> (home center / loja de materiais de construção, com 10 lojas físicas no DF e entrega para o Brasil).</li>
+<li><strong>Data e horário do teste:</strong> [Preencher]</li>
+<li><strong>Local / modalidade:</strong> [Presencial / Remoto, com gravação de tela e áudio]</li>
+<li><strong>Moderador(a):</strong> [Nome do integrante]</li>
+<li><strong>Observador(a):</strong> [Nome do integrante]</li>
+<li><strong>Duração da sessão:</strong> 30 minutos (<em>briefing</em> + tarefas + SUS + entrevista).</li>
+<li><strong>Termo de Consentimento (TCLE):</strong> Lido e assinado pelo participante antes do início da sessão.</li>
+</ul>
+<hr />
+<h2 id="2-perfil-do-usuario-alvo">2. Perfil do Usuário-Alvo</h2>
+<ul>
+<li><strong>Idade:</strong> 49 anos.</li>
+<li><strong>Perfil:</strong> Pai de família, responsável pela gestão e compra de materiais para manutenções e reformas em sua residência principal e em chácaras. Frequenta ativamente as lojas físicas.</li>
+<li><strong>Familiaridade tecnológica:</strong> Usuário diário de internet e smartphone. Possui experiência com compras online em geral e já adquiriu materiais de construção pela internet.</li>
+<li><strong>Contexto de uso:</strong> Acessa o site para resolver necessidades reais de obra. Possui domínio do vocabulário técnico do setor (ex.: "sifão", "argamassa ACIII").</li>
+<li><strong>Critérios de exclusão:</strong> Não é colega da disciplina nem participou da elaboração do roteiro.</li>
+</ul>
+<hr />
+<h2 id="3-roteiro-de-conducao-da-sessao">3. Roteiro de Condução da Sessão</h2>
+<h3 id="31-abertura-e-recepcao">3.1 Abertura e Recepção</h3>
+<blockquote>
+<p>"Oi! Obrigado por participar. Antes de começar, confirmando: você já leu e assinou o termo de consentimento que te enviei? Vamos fazer um teste do site da Castelo Forte. Não estamos testando você, mas sim o site - não existe resposta certa ou errada, e qualquer dificuldade sua é a informação que precisamos. Vou te pedir para realizar algumas tarefas como se estivesse comprando para a sua casa ou chácara. Por favor, pense em voz alta: vá dizendo o que está vendo, o que espera encontrar e o que acha que vai acontecer a cada clique. Sua tela e voz serão gravadas apenas para a pesquisa. Pode parar a qualquer momento. Alguma dúvida?"</p>
+</blockquote>
+<h3 id="32-transicao-entre-tarefas">3.2 Transição entre Tarefas</h3>
+<blockquote>
+<p>"Vamos para a próxima situação. Vou te contar um cenário comum de obra, e queria que você tentasse resolver do jeito que faria normalmente. Não tem pressa." <em>(Lia-se o cenário e iniciava-se o cronômetro).</em></p>
+</blockquote>
+<hr />
+<h2 id="4-tarefas-do-teste-de-usabilidade-metricas-e-resultados">4. Tarefas do Teste de Usabilidade (Métricas e Resultados)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">N.º</th>
+<th style="text-align: left;">Cenário da Tarefa</th>
+<th style="text-align: center;">Tempo</th>
+<th style="text-align: center;">Resultado</th>
+<th style="text-align: left;">N.º de Erros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: left;">Encontrar lata de 18L de tinta acrílica para exterior (até R$ 350).</td>
+<td style="text-align: center;">26s</td>
+<td style="text-align: center;">Sucesso</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Encontrar sifão sanfonado universal e fita veda-rosca.</td>
+<td style="text-align: center;">28s</td>
+<td style="text-align: center;">Sucesso</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: left;">Descobrir regras de frete e entrega para região fora do centro (chácara) para piso cerâmico.</td>
+<td style="text-align: center;">116s</td>
+<td style="text-align: center;"><strong>Falha</strong></td>
+<td style="text-align: left;">1 (Dificuldade com informações de entrega)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: left;">Salvar, favoritar ou compartilhar uma furadeira/parafusadeira.</td>
+<td style="text-align: center;">55s</td>
+<td style="text-align: center;">Sucesso</td>
+<td style="text-align: left;">0 (Usou WhatsApp para evitar login)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: left;">Encontrar a opção de "Compre no site e Retire na Loja" para uma urgência.</td>
+<td style="text-align: center;">32s</td>
+<td style="text-align: center;">Sucesso</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="indicadores-de-desempenho">Indicadores de Desempenho:</h3>
+<ul>
+<li><strong>Taxa de Sucesso:</strong> 80% (4 de 5 tarefas concluídas).</li>
+<li><strong>Tempo Médio por Tarefa:</strong> 51,4 segundos.</li>
+</ul>
+<hr />
+<h2 id="5-achados-de-observacao-e-entrevista-pos-teste">5. Achados de Observação e Entrevista Pós-Teste</h2>
+<h3 id="comportamento-e-navegacao-insights-das-tarefas">Comportamento e Navegação (Insights das Tarefas)</h3>
+<ul>
+<li><strong>Aversão a cadastro (Bypass cognitivo):</strong> Na Tarefa 4 (salvar produto), o usuário evitou a fricção de criar conta. Preferiu usar o botão de "Compartilhar via WhatsApp" e enviar o link para si mesmo/esposa.</li>
+<li><strong>Fricção em informações logísticas:</strong> A única falha (Tarefa 3) ocorreu na busca por políticas de frete para regiões afastadas. O sistema não apresenta essas informações de forma acessível antes do checkout.</li>
+</ul>
+<h3 id="entrevista-pos-teste-sintese">Entrevista Pós-Teste (Síntese)</h3>
+<ul>
+<li><strong>Omnicanalidade e modelo de negócio:</strong> O usuário prefere utilizar o WhatsApp da loja para fechar compras visando o atendimento consultivo e a negociação de descontos, utilizando o site apenas como catálogo de referência.</li>
+<li><strong>Confiança técnica vs. Logística:</strong> O usuário sentiu segurança nas descrições técnicas dos produtos, mas relatou falta de clareza nas informações de disponibilidade de estoque físico.</li>
+<li><strong>Sugestão de funcionalidade (Voice UI):</strong> O usuário sugeriu a inclusão de um botão de Busca por Voz (microfone), recurso útil para o contexto de canteiro de obras.</li>
+</ul>
+<hr />
+<h2 id="6-avaliacao-sus-system-usability-scale">6. Avaliação SUS (System Usability Scale)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Afirmação</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1. Eu acho que gostaria de usar este site com frequência.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2. Achei o site desnecessariamente complexo.</td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3. Achei o site fácil de usar.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>X</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">4. Acho que precisaria de apoio técnico para usar este site.</td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5. Achei que as várias funções deste site estavam bem integradas.</td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">6. Achei que havia muita inconsistência neste site.</td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">7. Imagino que a maioria das pessoas aprenderia a usar rápido.</td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">8. Achei o site muito complicado de usar.</td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">9. Senti-me muito confiante usando o site.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">10. Precisei aprender coisas novas para conseguir usar o site.</td>
+<td style="text-align: center;"><strong>X</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Resultado Final SUS:</strong> <strong>72,5</strong> (Sistema classificado como de <strong>Usabilidade Aceitável</strong>). O principal ponto de alerta registrado pelo participante foi a percepção de falta de integração entre as funções do site (Q5).</li>
+</ul>
+<hr />
+<h2 id="7-checklist-rapido-de-acessibilidade-wcag">7. Checklist Rápido de Acessibilidade (WCAG)</h2>
+<ul>
+<li>[V] O contraste entre textos e fundo é suficiente.</li>
+<li>[V] Imagens de produtos e ícones possuem rótulos claros.</li>
+<li>[F] É possível navegar pelos elementos usando apenas teclado (Tab/Enter). <em>(Falhou)</em></li>
+<li>[V] Os campos de formulário possuem rótulos indicando o que digitar.</li>
+<li>[F] Se o usuário aplica zoom, o layout continua funcional. <em>(Falhou)</em></li>
+<li>[F] Elementos não são muito pequenos ou próximos demais. <em>(Falhou)</em></li>
+</ul>
+<hr />
+<h2 id="8-conclusao-final-e-recomendacoes">8. Conclusão Final e Recomendações</h2>
+<p>A experiência de uso do site da Castelo Forte demonstra que a plataforma atende bem aos requisitos básicos de busca e detalhamento técnico de produtos. O usuário sentiu confiança nas especificações apresentadas, o que valida a qualidade do cadastro dos itens. Contudo, a jornada do usuário apresenta gargalos significativos quando a intenção de busca transita para a intenção de compra. Destacam-se três áreas prioritárias para melhoria:</p>
+<ol>
+<li><strong>Transparência Logística e de Estoque (Heurística de Visibilidade do Status):</strong> A dificuldade em encontrar políticas de frete para áreas fora dos grandes centros (chácaras) foi o ponto de maior frustração. O cálculo de frete e a sinalização de disponibilidade para "Retirada em Loja" devem estar visíveis na página do produto.</li>
+<li><strong>Redução de Fricção no Fluxo de Compra:</strong> O comportamento de contornar a criação de conta utilizando o WhatsApp indica aversão a cadastros complexos. Um atalho visual do tipo "Negocie este carrinho com um vendedor" poderia unificar o fluxo digital com o hábito presencial do cliente.</li>
+<li><strong>Acessibilidade Digital (WCAG) e Inovação Contextual:</strong> Falhas de responsividade (zoom) e navegação por teclado requerem correção técnica. Adicionalmente, a sugestão de Busca por Voz apresenta-se como uma excelente oportunidade de adequação ao contexto mobile e de obra.</li>
+</ol>
+<p>Em suma, o site possui uma base sólida, mas precisa refinar a entrega de informações operacionais e integrar-se melhor aos hábitos de compra multicanal do seu usuário.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
