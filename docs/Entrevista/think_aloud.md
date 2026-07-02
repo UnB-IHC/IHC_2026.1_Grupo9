@@ -10,7 +10,7 @@
 > **Acesso à Gravação:**  
 > Devido às políticas de segurança corporativa do Microsoft Stream da UnB (`login.microsoftonline.com`), a reprodução incorporada na página é bloqueada pelos navegadores. Para assistir ao vídeo completo com áudio e tela, clique no link de redirecionamento abaixo:
 
-### 👉 [**Clique aqui para abrir e assistir à Gravação do Teste de Usabilidade no Microsoft Stream (UnB)**](https://unbbr-my.sharepoint.com/personal/241012329_aluno_unb_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F241012329_aluno_unb_br%2FDocuments%2FGrava%C3%A7%C3%B5es%2FReuni%C3%A3o%20com%20Luiz%20Henrique%20Pallavicini-20260702_170515-Grava%C3%A7%C3%A3o%20de%20Reuni%C3%A3o%2Emp4)
+<iframe width="1307" height="735" src="https://www.youtube.com/embed/YcS-Mfis094" title="Reunião com Luiz Henrique Pallavicini - Gravação de Reunião" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
