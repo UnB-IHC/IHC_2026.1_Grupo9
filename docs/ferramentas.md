@@ -56,13 +56,14 @@ Como esta extensão é distribuída junto ao repositório do projeto, a instala�
 
 ---
 
-## 📊 Estrutura do Relatório Gerado (`.txt`)
+## 📊 Estrutura dos Relatórios Gerados e Templates
 
-Ao abrir a extensão, ela realiza a varredura instantânea 360° e preenche todas as notas em tempo real. Ao clicar em **"Gerar Relatório Completo"**, o plugin compila o resumo executivo e a avaliação detalhada dos 18 critérios em um arquivo padronizado (`auditoria_CheckAAA_YYYY-MM-DD.txt`).
+Ao abrir a extensão na página do navegador, ela realiza a varredura instantânea 360° do DOM e preenche todas as notas em tempo real. Ao clicar em **"📥 Gerar Relatório Completo (.txt)"**, o plugin compila o resumo executivo e a avaliação detalhada dos 18 critérios em um arquivo padronizado (`auditoria_CheckAAA_YYYY-MM-DD.txt`).
 
-Para não sobrecarregar esta página com a leitura extensa do arquivo gerado, separamos a demonstração integral dos 18 itens inspecionados em uma seção dedicada:
+Para garantir coesão metodológica nas avaliações do nosso grupo, estruturamos uma seção exclusiva para os modelos de saída do ecossistema CheckAAA:
 
-👉 **[Consulte aqui o Template Completo do Relatório de Auditoria](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/relatorio_template.md)** para visualizar o formato exato de saída de cada check com explicação e base normativa.
+👉 **[Consulte aqui os Templates de Relatórios de Avaliação (Manual & Automatizada)](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/relatorio_template.md)** para visualizar o **Template 1** (Relatório de Avaliação Manual Completa cobrindo os 10 Checklists e 42 critérios verificáveis) e o **Template 2** (Relatório de Auditoria Automatizada via Plugin v3.0 cobrindo os 18 critérios instantâneos).
+👉 **[Veja aqui o Estudo de Caso Prático com o Plugin no Castelo Forte](file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/relatorio_plugin.md)** para conferir a aplicação e o diagnóstico de nossa ferramenta na íntegra.
 
 ---
 
