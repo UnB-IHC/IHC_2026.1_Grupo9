@@ -1,0 +1,1289 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guia e checklist prático para implementação de UX, Acessibilidade (A11y) e Usabilidade.">
+      
+      
+        <meta name="author" content="Grupo 09">
+      
+      
+      
+        <link rel="prev" href="../../teste_usabilidade/">
+      
+      
+        <link rel="next" href="../referencias/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Técnica e Vídeos (Think Aloud) - CheckAAA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#think-aloud" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="CheckAAA" class="md-header__button md-logo" aria-label="CheckAAA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CheckAAA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Técnica e Vídeos (Think Aloud)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UnB-IHC/IHC_2026.1_Grupo9" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2026.1_Grupo9
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CheckAAA" class="md-nav__button md-logo" aria-label="CheckAAA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CheckAAA
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UnB-IHC/IHC_2026.1_Grupo9" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2026.1_Grupo9
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia de Acessibilidade
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia de Acessibilidade
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../desenvolvimentoweb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geração de Conteúdo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design de Interfaces & UX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../heuristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas de Nielsen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Construção de Personas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blueprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Blueprint & Jornada
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design_empatico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Empático
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao_projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Projetos & Agilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação do Site
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avaliação do Site
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao_castelo_forte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Manual (Castelo Forte)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relatorio_plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Automatizada com Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ferramenta Utilizada (Plugin v3.0)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relatorio_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template do Relatório
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entrevistas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Entrevistas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teste_usabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teste de Usabilidade (Relatório & SUS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Técnica e Vídeos (Think Aloud)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Técnica e Vídeos (Think Aloud)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gravacao-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gravação da Sessão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-metodo-think-aloud-pensar-em-voz-alta-no-teste-de-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O Método Think Aloud (Pensar em Voz Alta) no Teste de Usabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-o-que-e-o-metodo-think-aloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. O que é o Método Think Aloud?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-como-funciona-o-metodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Como Funciona o Método?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-aplicacao-pratica-do-think-aloud-no-roteiro-do-teste-castelo-forte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Aplicação Prática do Think Aloud no Roteiro do Teste (Castelo Forte)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Aplicação Prática do Think Aloud no Roteiro do Teste (Castelo Forte)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-preparacao-e-instrucao-de-abertura-secao-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Preparação e Instrução de Abertura (Seção 3.1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-descoberta-de-modelos-mentais-por-meio-de-cenarios-secao-32-e-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Descoberta de Modelos Mentais por meio de Cenários (Seção 3.2 e 4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-vantagens-do-metodo-identificadas-no-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Vantagens do Método Identificadas no Teste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências Metodológicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gravacao-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gravação da Sessão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-metodo-think-aloud-pensar-em-voz-alta-no-teste-de-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O Método Think Aloud (Pensar em Voz Alta) no Teste de Usabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-o-que-e-o-metodo-think-aloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. O que é o Método Think Aloud?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-como-funciona-o-metodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Como Funciona o Método?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-aplicacao-pratica-do-think-aloud-no-roteiro-do-teste-castelo-forte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Aplicação Prática do Think Aloud no Roteiro do Teste (Castelo Forte)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Aplicação Prática do Think Aloud no Roteiro do Teste (Castelo Forte)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-preparacao-e-instrucao-de-abertura-secao-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Preparação e Instrução de Abertura (Seção 3.1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-descoberta-de-modelos-mentais-por-meio-de-cenarios-secao-32-e-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Descoberta de Modelos Mentais por meio de Cenários (Seção 3.2 e 4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-vantagens-do-metodo-identificadas-no-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Vantagens do Método Identificadas no Teste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="think-aloud">Think Aloud</h1>
+<blockquote>
+<p>Técnica de verbalização do pensamento utilizada durante o teste de usabilidade com o site <a href="https://casteloforte.com.br">casteloforte.com.br</a>.</p>
+</blockquote>
+<hr />
+<h2 id="gravacao-da-sessao">Gravação da Sessão</h2>
+<blockquote>
+<p>[!NOTE]
+<strong>Acesso à Gravação:</strong><br />
+Devido às políticas de segurança corporativa do Microsoft Stream da UnB (<code>login.microsoftonline.com</code>), a reprodução incorporada na página é bloqueada pelos navegadores. Para assistir ao vídeo completo com áudio e tela, clique no link de redirecionamento abaixo:</p>
+</blockquote>
+<iframe width="1307" height="735" src="https://www.youtube.com/embed/YcS-Mfis094" title="Reunião com Luiz Henrique Pallavicini - Gravação de Reunião" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr />
+<h2 id="o-metodo-think-aloud-pensar-em-voz-alta-no-teste-de-usabilidade">O Método Think Aloud (Pensar em Voz Alta) no Teste de Usabilidade</h2>
+<p>Este documento apresenta uma visão detalhada sobre o método <strong>Think Aloud</strong>, seus fundamentos, modo de funcionamento e como ele foi integrado e aplicado de forma prática no roteiro de teste de usabilidade do site <strong>Castelo Forte</strong>, desenvolvido para a disciplina de <em>Interação Humano-Computador (IHC)</em> da <em>Universidade de Brasília (UnB)</em>.[cite: 1]</p>
+<hr />
+<h2 id="1-o-que-e-o-metodo-think-aloud">1. O que é o Método <em>Think Aloud</em>?</h2>
+<p>O método <strong>Think Aloud</strong> (ou <em>Pensar em Voz Alta</em>) é uma das técnicas mais tradicionais, eficazes e de baixo custo utilizadas na avaliação de usabilidade em Interação Humano-Computador. Originalmente adaptado da psicologia cognitiva por Clayton Lewis e consolidado por Jakob Nielsen, o método consiste em <strong>solicitar que o participante verbalize de forma contínua seus pensamentos, sentimentos, expectativas e reações enquanto realiza uma série de tarefas em uma interface.</strong></p>
+<p>Em vez de apenas observar o que o usuário faz de forma silenciosa, o avaliador consegue acessar os <em>processos cognitivos</em> que levam a essas ações. Isso permite mapear não apenas <em>onde</em> o usuário erra, mas o <em>porquê</em> ele tomou aquela decisão.</p>
+<hr />
+<h2 id="2-como-funciona-o-metodo">2. Como Funciona o Método?</h2>
+<p>O funcionamento do Think Aloud apoia-se em três pilares fundamentais durante a sessão de testes:</p>
+<ol>
+<li><strong>A Explicação e o Alinhamento:</strong> O moderador esclarece ao participante que o objeto de estudo é a interface (o sistema) e não a capacidade do usuário. Isso reduz a ansiedade e encoraja a honestidade.</li>
+<li><strong>A Verbalização Constante:</strong> O participante é instruído a relatar o que está tentando fazer, o que espera que aconteça ao clicar em um elemento, o que o confunde e o que ele está sentindo (como frustração ou satisfação).</li>
+<li><strong>A Intervenção Mínima (Moderação Ativa):</strong> O papel do moderador é predominantemente observador. Ele só deve intervir para incentivar o participante a continuar falando (usando ganchos neutros como: <em>"O que você está pensando agora?"</em> ou <em>"O que você espera que aconteça aqui?"</em>) ou se o usuário ficar completamente bloqueado por uma falha catastrófica do sistema.</li>
+</ol>
+<hr />
+<h2 id="3-aplicacao-pratica-do-think-aloud-no-roteiro-do-teste-castelo-forte">3. Aplicação Prática do <em>Think Aloud</em> no Roteiro do Teste (Castelo Forte)</h2>
+<p>O roteiro do teste de usabilidade estruturado para o site <strong>Castelo Forte</strong> ilustra com precisão como o método é preparado, iniciado e mantido ao longo de uma sessão real.[cite: 1] Abaixo, detalha-se como os elementos do método foram incorporados ao roteiro fornecido:</p>
+<h3 id="a-preparacao-e-instrucao-de-abertura-secao-31">A. Preparação e Instrução de Abertura (Seção 3.1)</h3>
+<p>A aplicação metodológica começa diretamente na recepção e quebra-gelo. O roteiro traz as instruções exatas recomendadas pela literatura de IHC para contextualizar o participante[cite: 1]:</p>
+<blockquote>
+<p><em>"Não estamos testando você, mas sim o site - não existe resposta certa ou errada, e qualquer dificuldade sua é a informação que precisamos."</em>[cite: 1]</p>
+</blockquote>
+<p>Esta frase é crucial no Think Aloud para desarmar o participante psicologicamente, garantindo que ele não se sinta avaliado. Na sequência, a instrução direta de verbalização é dada[cite: 1]:</p>
+<blockquote>
+<p><em>"...Por favor, pense em voz alta: vá dizendo o que está vendo, o que espera encontrar e o que acha que vai acontecer a cada clique."</em>[cite: 1]</p>
+</blockquote>
+<p>Aqui, o roteiro ensina formalmente o participante a realizar a tarefa de pensar em voz alta.[cite: 1]</p>
+<h3 id="b-descoberta-de-modelos-mentais-por-meio-de-cenarios-secao-32-e-4">B. Descoberta de Modelos Mentais por meio de Cenários (Seção 3.2 e 4)</h3>
+<p>Nas tarefas projetadas, o Think Aloud permite desvelar a diferença entre o modelo conceitual do site e o modelo mental do usuário. O roteiro dita[cite: 1]:</p>
+<blockquote>
+<p><em>"Vou te contar um cenário comum de obra, e queria que você tentasse resolver do jeito que faria normalmente."</em>[cite: 1]</p>
+</blockquote>
+<p>Ao apresentar um cenário prático (como <em>"Encontrar lata de 18L de tinta acrílica"</em> ou <em>"Descobrir regras de frete... para chácara"</em>), o usuário navega enquanto fala[cite: 1]. Através disso, puderam ser extraídos <em>insights</em> valiosos que uma gravação silenciosa não capturaria:</p>
+<ul>
+<li><strong>Bypass Cognitivo na Tarefa 4 (Salvar Furadeira):</strong> O usuário verbalizou que preferia "enviar o link via WhatsApp para si mesmo" do que se cadastrar[cite: 1]. O Think Aloud revelou o cansaço do usuário em relação a formulários de cadastro de forma explícita.[cite: 1]</li>
+<li><strong>Frustração na Busca por Frete (Tarefa 3):</strong> O usuário passou <strong>116 segundos</strong> tentando descobrir o valor do frete e acabou falhando[cite: 1]. Durante este tempo, a verbalização de suas dúvidas e do caminho percorrido indicou aos pesquisadores exatamente quais menus de ajuda ou seções informativas estavam opacos ou mal localizados no layout.[cite: 1]</li>
+</ul>
+<hr />
+<h2 id="4-vantagens-do-metodo-identificadas-no-teste">4. Vantagens do Método Identificadas no Teste</h2>
+<p>A aplicação do Think Aloud neste teste específico para a disciplina trouxe benefícios práticos evidentes no resultado final:</p>
+<ul>
+<li><strong>Compreensão Qualitativa dos Erros:</strong> Capturou-se com exatidão a barreira enfrentada na Tarefa 3, revelando que o usuário não entendia por que o valor do frete para regiões afastadas (chácaras) não aparecia de forma simples[cite: 1].</li>
+<li><strong>Captura de Sugestões Espontâneas:</strong> Durante a verbalização do uso no contexto de obras, o usuário sugeriu espontaneamente a criação de uma <strong>Busca por Voz (Voice UI)</strong>, pois percebeu o quão útil seria pesquisar um produto no canteiro com as mãos ocupadas ou sujas[cite: 1].</li>
+<li><strong>Descoberta do Comportamento Multicanal:</strong> O método deixou claro que o site serve como <em>catálogo técnico</em>, enquanto a conversão de venda de fato ocorre no WhatsApp (onde há negociação de descontos), detalhe que métricas puramente quantitativas (como cliques e mapas de calor) teriam dificuldade de decifrar sozinhas[cite: 1].</li>
+</ul>
+<hr />
+<h2 id="5-conclusao">5. Conclusão</h2>
+<p>O método <strong>Think Aloud</strong> provou-se indispensável no teste de usabilidade do site Castelo Forte[cite: 1]. Ele transformou cliques e tempos de execução frios (como os 116 segundos da falha ou os 55 segundos de compartilhamento) em dados ricos sobre o comportamento, necessidades e limitações reais de um consumidor de 49 anos lidando com tecnologia e logística de construção civil[cite: 1]. </p>
+<p>A inclusão explícita das instruções de verbalização no roteiro garantiu que o participante se sentisse seguro para errar, expondo com clareza os pontos de atrito e as oportunidades de melhoria que constam nas recomendações finais deste relatório[cite: 1].</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

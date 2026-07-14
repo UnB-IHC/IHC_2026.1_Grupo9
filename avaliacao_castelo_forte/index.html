@@ -1,0 +1,2002 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guia e checklist prático para implementação de UX, Acessibilidade (A11y) e Usabilidade.">
+      
+      
+        <meta name="author" content="Grupo 09">
+      
+      
+      
+        <link rel="prev" href="../gestao_projetos/">
+      
+      
+        <link rel="next" href="../relatorio_plugin/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Avaliação Manual (Castelo Forte) - CheckAAA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#relatorio-de-avaliacao-manual-de-ihc-e-acessibilidade-site-castelo-forte" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="CheckAAA" class="md-header__button md-logo" aria-label="CheckAAA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CheckAAA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Avaliação Manual (Castelo Forte)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UnB-IHC/IHC_2026.1_Grupo9" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2026.1_Grupo9
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CheckAAA" class="md-nav__button md-logo" aria-label="CheckAAA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CheckAAA
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UnB-IHC/IHC_2026.1_Grupo9" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2026.1_Grupo9
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia de Acessibilidade
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia de Acessibilidade
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../desenvolvimentoweb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conteudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geração de Conteúdo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design de Interfaces & UX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heuristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas de Nielsen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Construção de Personas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blueprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Blueprint & Jornada
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design_empatico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Empático
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gestao_projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Projetos & Agilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação do Site
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avaliação do Site
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Manual (Castelo Forte)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Manual (Castelo Forte)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dados-da-avaliacao-resumo-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dados da Avaliação &amp; Resumo Executivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dados da Avaliação &amp; Resumo Executivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escopo-de-verificacao-checklists-contabilizados-vs-nao-contabilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚫 Escopo de Verificação: Checklists Contabilizados vs. Não Contabilizados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#painel-geral-da-nossa-avaliacao-7-checklists-verificaveis-42-criterios-contabilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Painel Geral da Nossa Avaliação (7 Checklists Verificáveis / 42 Critérios Contabilizados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnostico-detalhado-dos-7-checklists-contabilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnóstico Detalhado dos 7 Checklists Contabilizados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagnóstico Detalhado dos 7 Checklists Contabilizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-checklist-de-desenvolvimento-web-codigo-e-estrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Checklist de Desenvolvimento Web (Código e Estrutura)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-checklist-de-geracao-de-conteudo-e-redacao-ux-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Checklist de Geração de Conteúdo e Redação (UX Writing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-checklist-de-design-de-interfaces-e-ux-uiux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Checklist de Design de Interfaces e UX (UI/UX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-checklist-de-avaliacao-heuristica-inclusiva-nielsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Checklist de Avaliação Heurística Inclusiva (Nielsen)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-checklist-de-construcao-de-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Checklist de Construção de Personas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-checklist-de-service-blueprint-jornada-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Checklist de Service Blueprint &amp; Jornada do Usuário
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-checklist-de-ferramentas-e-validacao-de-qa-auditoria-hibrida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Checklist de Ferramentas e Validação de QA / Auditoria Híbrida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secao-informativa-visao-geral-dos-3-checklists-nao-contabilizados-na-nota" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seção Informativa: Visão Geral dos 3 Checklists Não Contabilizados na Nota
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao-da-nossa-avaliacao-sintese-quantitativa-e-qualitativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Conclusão da Nossa Avaliação — Síntese Quantitativa e Qualitativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Conclusão da Nossa Avaliação — Síntese Quantitativa e Qualitativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintese-quantitativa-da-nota-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Síntese Quantitativa da Nota Técnica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise-qualitativa-o-duplo-padrao-de-experiencia-e-a-hipotese-de-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 Análise Qualitativa (O Duplo Padrão de Experiência e a Hipótese de Governança)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Análise Qualitativa (O Duplo Padrão de Experiência e a Hipótese de Governança)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-o-ponto-forte-qualitativo-a-rede-de-seguranca-do-atendimento-humanizado-frontstage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. O Ponto Forte Qualitativo: A Rede de Segurança do Atendimento Humanizado (Frontstage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-o-ponto-critico-qualitativo-a-barreira-excludente-para-tecnologias-assistivas-backstage-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. O Ponto Crítico Qualitativo: A Barreira Excludente para Tecnologias Assistivas (Backstage &amp; Código)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-diagnostico-qualitativo-de-governanca-a-hipotese-da-definition-of-done-dod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diagnóstico Qualitativo de Governança: A Hipótese da Definition of Done (DoD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plano-de-acao-recomendacoes-do-grupo-9-para-o-castelo-forte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Plano de Ação (Recomendações do Grupo 9 para o Castelo Forte)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relatorio_plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Automatizada com Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ferramenta Utilizada (Plugin v3.0)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relatorio_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template do Relatório
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entrevistas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Entrevistas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teste_usabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teste de Usabilidade (Relatório & SUS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Entrevista/think_aloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Técnica e Vídeos (Think Aloud)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Entrevista/referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências Metodológicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dados-da-avaliacao-resumo-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dados da Avaliação &amp; Resumo Executivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dados da Avaliação &amp; Resumo Executivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escopo-de-verificacao-checklists-contabilizados-vs-nao-contabilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚫 Escopo de Verificação: Checklists Contabilizados vs. Não Contabilizados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#painel-geral-da-nossa-avaliacao-7-checklists-verificaveis-42-criterios-contabilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Painel Geral da Nossa Avaliação (7 Checklists Verificáveis / 42 Critérios Contabilizados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnostico-detalhado-dos-7-checklists-contabilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnóstico Detalhado dos 7 Checklists Contabilizados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagnóstico Detalhado dos 7 Checklists Contabilizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-checklist-de-desenvolvimento-web-codigo-e-estrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Checklist de Desenvolvimento Web (Código e Estrutura)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-checklist-de-geracao-de-conteudo-e-redacao-ux-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Checklist de Geração de Conteúdo e Redação (UX Writing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-checklist-de-design-de-interfaces-e-ux-uiux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Checklist de Design de Interfaces e UX (UI/UX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-checklist-de-avaliacao-heuristica-inclusiva-nielsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Checklist de Avaliação Heurística Inclusiva (Nielsen)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-checklist-de-construcao-de-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Checklist de Construção de Personas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-checklist-de-service-blueprint-jornada-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Checklist de Service Blueprint &amp; Jornada do Usuário
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-checklist-de-ferramentas-e-validacao-de-qa-auditoria-hibrida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Checklist de Ferramentas e Validação de QA / Auditoria Híbrida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secao-informativa-visao-geral-dos-3-checklists-nao-contabilizados-na-nota" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seção Informativa: Visão Geral dos 3 Checklists Não Contabilizados na Nota
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao-da-nossa-avaliacao-sintese-quantitativa-e-qualitativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Conclusão da Nossa Avaliação — Síntese Quantitativa e Qualitativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Conclusão da Nossa Avaliação — Síntese Quantitativa e Qualitativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintese-quantitativa-da-nota-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Síntese Quantitativa da Nota Técnica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise-qualitativa-o-duplo-padrao-de-experiencia-e-a-hipotese-de-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 Análise Qualitativa (O Duplo Padrão de Experiência e a Hipótese de Governança)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Análise Qualitativa (O Duplo Padrão de Experiência e a Hipótese de Governança)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-o-ponto-forte-qualitativo-a-rede-de-seguranca-do-atendimento-humanizado-frontstage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. O Ponto Forte Qualitativo: A Rede de Segurança do Atendimento Humanizado (Frontstage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-o-ponto-critico-qualitativo-a-barreira-excludente-para-tecnologias-assistivas-backstage-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. O Ponto Crítico Qualitativo: A Barreira Excludente para Tecnologias Assistivas (Backstage &amp; Código)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-diagnostico-qualitativo-de-governanca-a-hipotese-da-definition-of-done-dod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diagnóstico Qualitativo de Governança: A Hipótese da Definition of Done (DoD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plano-de-acao-recomendacoes-do-grupo-9-para-o-castelo-forte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Plano de Ação (Recomendações do Grupo 9 para o Castelo Forte)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="relatorio-de-avaliacao-manual-de-ihc-e-acessibilidade-site-castelo-forte">Relatório de Avaliação Manual de IHC e Acessibilidade — Site "Castelo Forte"</h1>
+<p>Este documento apresenta o relatório prático de <strong>Avaliação Manual</strong> elaborado por <strong>nós, do Grupo 9 (IHC - UnB)</strong>, sobre o portal institucional e e-commerce do <strong>Castelo Forte</strong>.</p>
+<p>Para conduzir esta análise de forma aprofundada, sem a intervenção exclusiva de varreduras automatizadas, aplicamos os <strong>Checklists de Verificação do Projeto CheckAAA (desenvolvidos por nossa equipe)</strong> diretamente na interface do portal. Inspecionamos a árvore de elementos (DOM), testamos a navegação por teclado, executamos leitores de tela na prática e analisamos a experiência de uso ponta a ponta.</p>
+<hr />
+<h2 id="dados-da-avaliacao-resumo-executivo">Dados da Avaliação &amp; Resumo Executivo</h2>
+<blockquote>
+<p>[!NOTE]
+<strong>Objeto de Estudo:</strong> Site Castelo Forte (Varejo de Materiais de Construção, Reforma e Home Center no DF e Entorno)<br />
+<strong>Autoria da Avaliação:</strong> Equipe do Grupo 9 - Disciplina de IHC (Universidade de Brasília - UnB)<br />
+<strong>Metodologia:</strong> Inspeção Manual Heurística e de Acessibilidade baseada no ecossistema CheckAAA<br />
+<strong>Escopo da Análise:</strong> Página Inicial, Megamenu de Departamentos, Categorias, Página de Produto, Carrinho Lateral (<em>Minicart</em>), Lojas e Suporte<br />
+<strong>URL Analisada:</strong> <a href="https://www.casteloforte.com.br/">casteloforte.com.br</a><br />
+<strong>Data da Avaliação:</strong> Julho de 2026</p>
+</blockquote>
+<h3 id="escopo-de-verificacao-checklists-contabilizados-vs-nao-contabilizados">🚫 Escopo de Verificação: Checklists Contabilizados vs. Não Contabilizados</h3>
+<p>No âmbito do nosso projeto <strong>CheckAAA</strong>, desenvolvemos <strong>10 checklists temáticos (somando 56 critérios no total)</strong> para cobrir desde a codificação front-end até a governança corporativa e agilidade. No entanto, para garantir rigor metodológico e justiça no cálculo da nota técnica do site <strong>Castelo Forte</strong>, nossa equipe segmentou o ecossistema em duas categorias:</p>
+<ol>
+<li><strong>Checklists Verificáveis e Contabilizados na Nota (7 Checklists / 42 Critérios):</strong> São aqueles cujos atributos conseguimos inspecionar diretamente acessando a URL pública do e-commerce — analisando a interface visual, a árvore DOM (HTML/CSS), a resposta ao teclado, a vocalização em leitores de tela e os canais públicos de atendimento (<em>Frontstage</em>).</li>
+<li><strong>Checklists Não Contabilizados / Excluídos do Cálculo (3 Checklists / 14 Critérios):</strong> Optamos por deixar exatamente <strong>3 checklists de fora do cálculo quantitativo (Gestão de Projetos, Design Empático e Condução de Testes de Usabilidade)</strong> porque eles avaliam <strong>processos internos de governança da empresa, dinâmicas de escritório do time e sessões empíricas de laboratório com usuários recrutados</strong>. Como nossa avaliação externa opera no formato <em>caixa preta</em> (a partir do produto final em produção), não temos acesso aos ritos internos de trabalho da Castelo Forte e de sua agência de desenvolvimento.</li>
+</ol>
+<p>Abaixo, apresentamos a justificativa técnica elaborada por nossa equipe para cada uma das 3 exclusões:</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Justificativa Detalhada dos 3 Checklists Não Contabilizados:</strong>
+* <strong>1. <a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/gestao_projetos.md">Checklist de Gestão de Projetos (Agile/Scrum &amp; DoD)</a> — 5 critérios excluídos:</strong> Esse checklist avalia a alocação de orçamento para QA acessível, se os desenvolvedores possuem capacitação em WCAG, se a <em>Definition of Done (DoD)</em> das sprints exige acessibilidade e se os contratos com fornecedores possuem cláusulas inclusivas. <strong>Por que ficou de fora:</strong> Como nossa equipe não possui acesso ao Jira, ao backlog, às reuniões de planejamento ou aos contratos do Castelo Forte, seria metodologicamente incorreto pontuar positivamente ou penalizar a plataforma por critérios não observáveis na URL pública.
+* <strong>2. <a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/design_empatico.md">Checklist de Design Empático</a> — 4 critérios excluídos:</strong> Esse checklist avalia se o time de UX conduziu entrevistas etnográficas na fase de concepção, elaborou Mapas de Empatia e realizou dinâmicas internas (como navegar com os olhos vendados ou com simuladores de deficiência). <strong>Por que ficou de fora:</strong> Trata-se de artefatos da fase de <em>Discovery</em> e concepção interna de design. O código-fonte final não indica se a equipe realizou dinâmicas de empatia em seu escritório; verificar esse ponto exigiria auditar os relatórios de pesquisa internos da empresa.
+* <strong>3. <a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/teste_usabilidade.md">Checklist de Testes de Usabilidade (Protocolo Think-Aloud &amp; SUS)</a> — 5 critérios excluídos:</strong> Este é o roteiro metodológico do nosso projeto para a aplicação de sessões moderadas com participantes recrutados em laboratório, coletando verbalizações (<em>Think-Aloud</em>) e aplicando o questionário de pontuação subjetiva <em>SUS (System Usability Scale)</em>. <strong>Por que ficou de fora:</strong> O objetivo da presente avaliação é conduzir uma <strong>Inspeção Técnica de Especialistas por nossa equipe</strong>, sem o recrutamento de amostra externa de usuários nessa etapa do relatório.</p>
+</blockquote>
+<hr />
+<h3 id="painel-geral-da-nossa-avaliacao-7-checklists-verificaveis-42-criterios-contabilizados">Painel Geral da Nossa Avaliação (7 Checklists Verificáveis / 42 Critérios Contabilizados)</h3>
+<p>Olhando exclusivamente para os <strong>42 critérios que nossa equipe conseguiu verificar na prática</strong>, este é o desempenho técnico consolidado do portal <strong>Castelo Forte</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th style="text-align: left;">Checklist / Dimensão Avaliada (Contabilizados)</th>
+<th style="text-align: center;">Total de Critérios</th>
+<th style="text-align: center;">✅ Adequados</th>
+<th style="text-align: center;">⚠️ Pontos de Atenção</th>
+<th style="text-align: center;">❌ Falhas Críticas</th>
+<th style="text-align: center;">Índice de Adequação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: left;"><a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/desenvolvimentoweb.md">Desenvolvimento Web (Código e Estrutura)</a></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>33,3%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;"><a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/conteudo.md">Geração de Conteúdo e Redação (UX Writing)</a></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>50,0%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: left;"><a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/design.md">Design de Interfaces e UX (UI/UX)</a></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>50,0%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: left;"><a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/heuristicas.md">Avaliação Heurística Inclusiva (Nielsen)</a></td>
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>70,0%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: left;"><a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/personas.md">Construção de Personas</a></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>40,0%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: left;"><a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/blueprint.md">Service Blueprint &amp; Jornada do Usuário</a></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>80,0%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: left;"><a href="file:///home/giovani-coelho/Documentos/IHC_2026.1_Grupo9/docs/ferramentas.md">Ferramentas e Validação de QA / Híbrida</a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>50,0%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>—</strong></td>
+<td style="text-align: left;"><strong>TOTAL CONSOLIDADO (VERIFICÁVEIS)</strong></td>
+<td style="text-align: center;"><strong>42</strong></td>
+<td style="text-align: center;"><strong>23</strong></td>
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;"><strong>54,8%</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="diagnostico-detalhado-dos-7-checklists-contabilizados">Diagnóstico Detalhado dos 7 Checklists Contabilizados</h2>
+<p>Abaixo, detalhamos as observações de nossa equipe para cada um dos 42 critérios inspecionáveis no site da <strong>Castelo Forte</strong>, discriminando o que foi avaliado, o resultado de conformidade e a constatação técnica observada.</p>
+<h3 id="1-checklist-de-desenvolvimento-web-codigo-e-estrutura">1. Checklist de Desenvolvimento Web (Código e Estrutura)</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <strong>1. Semântica e Estrutura do Documento HTML (<code>&lt;html lang&gt;</code> e <code>&lt;title&gt;</code>)</strong></li>
+<li><strong>O que avaliamos:</strong> Se a tag raiz <code>&lt;html&gt;</code> possui o atributo <code>lang</code> definido corretamente para tecnologias assistivas e se o elemento <code>&lt;title&gt;</code> é descritivo e exclusivo para identificar a página.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O atributo <code>lang="pt-br"</code> está devidamente declarado na raiz do documento, garantindo que os leitores de tela vocalizem com a pronúncia brasileira correta. Além disso, o título ("Castelo Forte | 35 anos construindo sonhos 10 Lojas + Site") cumpre sua função de orientar o usuário sobre a marca e seu alcance territorial.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>2. Hierarquia de Cabeçalhos (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se os cabeçalhos seguem uma ordem lógica sequencial sem saltar níveis estruturais e se existe apenas um cabeçalho principal <code>&lt;h1&gt;</code> por página.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Durante a inspeção da árvore DOM, identificamos a presença de múltiplos <code>&lt;h1&gt;</code> em banners de promoções na home e saltos estruturais (de <code>&lt;h1&gt;</code> direto para <code>&lt;h3&gt;</code> em cards de departamento). Isso prejudica a navegação de usuários de sintetizadores de voz, que utilizam a lista de cabeçalhos como índice da página.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>3. Marcos Semânticos (Landmarks)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a interface utiliza corretamente as tags semânticas estruturais do HTML5 (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>) para demarcar as grandes regiões do portal.</li>
+<li><strong>Resultado:</strong> <code>❌ Falha Crítica</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O site falha ao não utilizar a tag estrutural <code>&lt;main&gt;</code> para envelopar o bloco central de conteúdo principal dos produtos. Consequentemente, quando usuários de tecnologias assistivas abrem uma nova página, não conseguem saltar direto para o conteúdo de interesse e são obrigados a percorrer todo o megamenu superior repetidamente.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>4. Formulários e Validação (<code>&lt;label&gt;</code>)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se todos os campos interativos de entrada de dados (inputs de texto, busca, cotação de CEP e selects) possuem uma tag <code>&lt;label&gt;</code> associada programaticamente ou atributo <code>aria-label</code>.</li>
+<li><strong>Resultado:</strong> <code>❌ Falha Crítica</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Inspecionamos os formulários da plataforma e encontramos 7 inputs interativos sem nenhuma associação com <code>&lt;label&gt;</code> ou <code>aria-label</code>, incluindo a barra de pesquisa central e os campos de cálculo de frete por CEP. O leitor de tela anuncia apenas "caixa de edição", bloqueando a autonomia de pessoas com deficiência visual na identificação do dado a ser preenchido.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>5. Componentes Dinâmicos e ARIA</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se componentes dinâmicos (modais de promoção, carrosséis e menus suspensos) utilizam atributos WAI-ARIA (<code>aria-expanded</code>, <code>aria-hidden</code>) e gerenciam corretamente o foco de teclado.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Observamos que, ao abrir modais de newsletter ou pop-ups promocionais de campanhas, o foco do teclado não é retido no interior do modal. Ao pressionarmos a tecla <code>Tab</code>, o foco vaza para os links ocultos ao fundo da página, o que desorienta usuários com deficiência visual ou motora.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>6. Tempo e Sessão</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o site impõe limites de tempo restritivos e não avisados no carrinho de compras ou durante a consulta de produtos.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li><strong>Análise da equipe:</strong> O carrinho de compras e o catálogo de materiais preservam a sessão sem expiração abrupta, permitindo que consumidores e mestres de obras consultem especificações técnicas e realizem cotações de múltiplos itens no seu próprio ritmo.</li>
+</ul>
+<hr />
+<h3 id="2-checklist-de-geracao-de-conteudo-e-redacao-ux-writing">2. Checklist de Geração de Conteúdo e Redação (UX Writing)</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <strong>1. Linguagem Simples e Clareza Textual (Plain Language)</strong></li>
+<li><strong>O que avaliamos:</strong> Se os textos utilizam linguagem clara, acessível e direta, evitando jargões técnicos incompreensíveis sem a devida contextualização.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A redação técnica do portal é bastante precisa. As descrições de produtos comunicam especificações de voltagem (110V/220V), dimensões, rendimento e acabamento de forma clara tanto para profissionais da construção civil quanto para consumidores realizando reparos residenciais.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>2. Estruturação da Leitura</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o conteúdo é subdividido em parágrafos curtos, listas com marcadores (<em>bullet points</em>) e subtítulos bem definidos para facilitar o escaneamento visual.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> As páginas de detalhes dos produtos organizam as especificações em tabelas estruturadas e listas com marcadores limpos, o que facilita bastante a rápida localização de dados técnicos chave como peso, garantia e fabricante.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>3. Hiperlinks (Links)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o texto âncora dos hiperlinks e botões é descritivo por si só, evitando expressões genéricas ou ambíguas como "clique aqui", "saiba mais" ou "ver".</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Em alguns banners de campanhas promocionais, encontramos links grafados unicamente como "Confira" ou "Ver ofertas". Sem a informação textual explícita no link (ou via <code>aria-label</code>), usuários de leitores de tela não conseguem compreender para qual departamento ou categoria de produto o link redirecionará.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>4. Texto Alternativo para Imagens (<code>alt</code>)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se todas as imagens informativas, fotos de produto e banners promocionais de ofertas possuem uma descrição textual significativa no atributo <code>alt</code>.</li>
+<li><strong>Resultado:</strong> <code>❌ Falha Crítica</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Este foi um dos pontos críticos de maior gravidade identificados por nossa equipe: contabilizamos <strong>123 imagens informativas de produtos e banners promocionais na página inicial sem o atributo <code>alt</code> preenchido</strong> (ou apenas com nomes de arquivos genéricos como "banner_desk.jpg"). Consequentemente, usuários com deficiência visual que utilizam leitores de tela perdem integralmente o acesso ao conteúdo das principais campanhas de ofertas do portal.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>5. Áudio, Vídeo e Multimídia</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se os vídeos de campanhas institucionais ou tutoriais de instalação de materiais oferecem legendas sincronizadas, audiodescrição e transcrição textual.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Os vídeos demonstrativos incorporados em páginas especiais de campanhas e parceiros não oferecem recurso de audiodescrição ou transcrição em texto puro acessível na própria página para usuários com deficiência auditiva ou visual.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>6. Instruções e Orientações</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se as instruções de navegação, cálculo de frete e finalização de compra não dependem exclusivamente de características sensoriais como cor, forma ou localização espacial.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li><strong>Análise da equipe:</strong> As instruções sobre prazos de entrega no DF, faixas de CEP e retirada nas lojas são explicadas textualmente com clareza, sem depender unicamente de indicações baseadas em cor ou formato (ex: "clique no ícone verde à direita").</li>
+</ul>
+<hr />
+<h3 id="3-checklist-de-design-de-interfaces-e-ux-uiux">3. Checklist de Design de Interfaces e UX (UI/UX)</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>1. Cores e Contraste Visuais</strong></li>
+<li><strong>O que avaliamos:</strong> Se a combinação de cores entre texto e fundo cumpre a razão mínima de contraste de 4.5:1 (WCAG AA) para garantir leitura confortável em diferentes condições de iluminação.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O contraste nos botões primários de compra ("Comprar" em azul marinho com texto branco ou amarelo) é satisfatório. Entretanto, observamos que links secundários no rodapé, textos de parcelamento em cinza claro sobre fundo branco e selos inativos apresentam razão de contraste reduzida (cerca de 2.8:1), o que dificulta a legibilidade para usuários com baixa visão ou em ambientes muito iluminados.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>2. Tipografia e Legibilidade</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a interface utiliza tipografia limpa, legível e com dimensionamento proporcional (mínimo de 16px no corpo de texto), sem entrelinhas excessivamente comprimido.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A fonte sem serifa adotada no portal apresenta excelente legibilidade, espaçamento entrelinhas adequado e boa escalabilidade em telas de computadores e dispositivos móveis.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>3. Navegação e Arquitetura da Informação</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a estrutura do portal é lógica e consistente, com menus bem categorizados, presença de <em>breadcrumbs</em> (migalhas de pão) e busca de rápido acesso.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O megamenu categoriza com precisão milhares de itens em departamentos lógicos (Elétrica, Hidráulica, Pisos, Ferramentas) e a presença constante de <em>breadcrumbs</em> nas páginas internas orienta o usuário com eficácia sobre sua localização exata dentro do catálogo.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>4. Área de Toque (Touch Targets)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se botões, ícones e links interativos em dispositivos móveis possuem dimensões mínimas de 44x44 pixels para evitar toques acidentais na interface.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Na versão mobile, identificamos ícones de paginação em carrosséis, botões de favoritar e links do menu inferior com área interativa reduzida (medindo aproximadamente 28x28 pixels). Essa limitação gera toques acidentais frequentes em usuários com dedos maiores ou com leves dificuldades de coordenação motora fina.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>5. Estados e Feedback Interativo</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se todos os elementos interativos fornecem feedback visual imediato ao usuário nos estados de <em>hover</em> (passagem do mouse), <em>active</em> (clique), <em>focus</em> e <em>disabled</em>.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O feedback de interação da plataforma é bastante nítido: cards de produto ganham destaque visual ao passar o mouse e botões de compra acionam animações instantâneas de confirmação ao adicionar um item ao carrinho.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>6. Animações e Movimento</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se carrosséis de banners rotativos e animações não contêm piscadas rápidas (&gt; 3 vezes/segundo) e se disponibilizam controle mecânico para pausar ou interromper a rotação automática.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li><strong>Análise da equipe:</strong> O carrossel principal de banners da home gira automaticamente a cada 4 segundos e não disponibiliza um botão visível e acessível para pausar a transição. Esse movimento automático contínuo pode causar desconforto vestibular ou sobrecarga de atenção em usuários com neurodivergências.</li>
+</ul>
+<hr />
+<h3 id="4-checklist-de-avaliacao-heuristica-inclusiva-nielsen">4. Checklist de Avaliação Heurística Inclusiva (Nielsen)</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <strong>1. Visibilidade do Estado do Sistema (H1)</strong></li>
+<li><strong>O que avaliamos:</strong> Se o portal mantém o usuário informado de forma contínua sobre o progresso de requisições em andamento através de feedback visual (<em>spinners</em> de carregamento).</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O sistema responde com rapidez e exibe indicadores claros de carregamento ao calcular os prazos de frete por CEP, ao filtrar produtos por faixa de preço e ao alternar a loja de retirada no carrinho.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>2. Compatibilidade entre o Sistema e o Mundo Real (H2)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a interface adota linguagem, convenções e símbolos familiares ao cotidiano do público-alvo, sem expor mensagens de erro técnicas da programação.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O vocabulário utilizado na navegação reflete adequadamente o modelo mental de um Home Center do mundo físico ("Departamentos", "Televendas", "Retirar na Loja", "Cálculo de Frete"), sem vazamento de exceções ou códigos técnicos ao usuário final.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>3. Controle e Liberdade do Usuário (H3)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a plataforma disponibiliza "saídas de emergência" evidentes, como botões de Voltar, Fechar Modais ou Limpar Filtros para reverter ações indesejadas sem perda de dados.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O carrinho lateral (<em>minicart</em>) permite a alteração de quantidades e a remoção rápida de itens em um clique, e os modais promocionais possuem botões de fechamento ("X") bem posicionados e visíveis.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>4. Consistência e Padrões (H4)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o site mantém uniformidade visual e funcional entre todas as páginas e departamentos, padronizando posições de botões, exibição de preços e ícones.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Observamos rigorosa padronização na apresentação dos cards de produto, na exibição do preço à vista em destaque e parcelado logo abaixo, bem como na fixação do cabeçalho de busca e contatos em todo o domínio.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>5. Prevenção de Erros (H5)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a interface aplica restrições preventivas de formatação e máscaras automáticas em campos numéricos (como CEP, CPF/CNPJ e Telefone) antes da submissão do formulário.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O sistema aplica máscaras automáticas de formatação em campos de CEP e cadastro, além de bloquear caracteres alfabéticos onde apenas números são aceitos, prevenindo erros de preenchimento de forma eficaz.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>6. Reconhecimento em vez de Memorização (H6)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o portal minimiza a carga cognitiva e o esforço de memória, disponibilizando sugestões automáticas (<em>autocomplete</em>) e mantendo opções selecionadas claramente visíveis.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O campo de busca apresenta um bom sistema de <em>autocomplete</em> por palavras-chave. No entanto, ao navegar por múltiplos filtros de subcategorias (como marca, voltagem e preço), a interface não consolida no topo da lista um painel fixo de "Filtros Ativos", exigindo que o usuário memorize ou role a página inteira para verificar quais filtros estão selecionados.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>7. Flexibilidade e Eficiência de Uso (H7 — Skip Link e Aceleradores)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o site disponibiliza um link de atalho no topo da página (<em>"Pular para o conteúdo principal"</em>) e aceleradores para otimizar a navegação de usuários de teclado e usuários experientes.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A ausência de um <em>Skip Link</em> no cabeçalho penaliza severamente a eficiência de navegação. Ao executarmos testes exclusivos via teclado, precisamos pressionar a tecla <code>Tab</code> mais de <strong>35 vezes</strong> em cada nova página apenas para atravessar toda a barra superior, contatos e o megamenu até alcançar a área de produtos.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>8. Estética e Design Minimalista (H8)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o layout evita poluição visual, sobreposição de pop-ups concorrentes ou excesso de banners promocionais que dificultem o foco na informação principal.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Em períodos de grandes campanhas ou datas sazonais, a página inicial acumula alta densidade visual, exibindo simultaneamente carrosséis rotativos, modais centrais de newsletter, selos coloridos de desconto e ícones flutuantes de chat. Essa concorrência de elementos eleva a carga cognitiva e pode gerar fadiga visual.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>9. Ajude os Usuários a Reconhecer, Diagnosticar e Recuperar-se de Erros (H9)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se as mensagens de erro são redigidas em linguagem clara, destacadas em vermelho ou com ícones de alerta, e indicam exatamente o que precisa ser corrigido de forma construtiva.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Quando um campo obrigatório de cadastro não é preenchido ou um CEP inválido é inserido, a interface destaca o input em vermelho e exibe uma mensagem clara de orientação ("Por favor, insira um CEP válido para calcular o frete"), facilitando a correção pelo usuário.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>10. Ajuda e Documentação (H10)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o portal disponibiliza centrais de suporte fáceis de localizar, mapa e endereços das lojas, políticas de trocas e devoluções e dúvidas frequentes (FAQ).</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li><strong>Análise da equipe:</strong> A central de ajuda e documentação é muito bem estruturada: há uma página exclusiva detalhando o mapa, endereços e horários das <strong>10 Lojas no DF e Entorno</strong>, além de explicações claras sobre o funcionamento das entregas da frota própria e links de contato bem posicionados.</li>
+</ul>
+<hr />
+<h3 id="5-checklist-de-construcao-de-personas">5. Checklist de Construção de Personas</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <strong>1. Representatividade na Amostra de Pesquisa</strong></li>
+<li><strong>O que avaliamos:</strong> Se a arquitetura de informação e as jornadas contemplam a diversidade real do público consumidor de materiais de construção (desde profissionais da área até consumidores residenciais e idosos).</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A estrutura do catálogo abrange tanto pacotes de materiais pesados para construtores e mestres de obras quanto linhas para pequenos reparos domésticos, demonstrando que o design de serviços considera a ampla heterogeneidade socioeconômica e demográfica do Distrito Federal.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>2. Inclusão de Deficiências no Perfil da Persona</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o desenvolvimento do front-end considerou explicitamente as limitações e necessidades de navegação de pessoas com deficiência visual, motora ou cognitiva.</li>
+<li><strong>Resultado:</strong> <code>❌ Falha Crítica</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O cruzamento das falhas encontradas no site com nossos perfis de personas inclusivas evidencia que a codificação do portal foi estruturada sob a premissa restrita de um usuário normovisual que navega via mouse. A ausência de rótulos em formulários e de textos alternativos em 123 banners demonstra que personas com deficiência visual não foram devidamente contempladas nos requisitos técnicos.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>3. Mapeamento Tecnológico e de Assistência (Tecnologias Assistivas)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se botões e controles clicáveis compostos por ícones possuem marcação acessível (<code>aria-label</code>) para que leitores de tela vocalizem a finalidade exata da ação.</li>
+<li><strong>Resultado:</strong> <code>❌ Falha Crítica</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Controles fundamentais do e-commerce — como o ícone de carrinho no cabeçalho, o ícone de lupa para pesquisa e os botões de fechamento de modais — são implementados como vetores (SVG) desprovidos do atributo <code>aria-label</code>. Ao interagir com esses elementos, o leitor de tela anuncia apenas "botão" ou lê o nome do arquivo vetorial, impedindo que o usuário cego compreenda a função do controle.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>4. Dores, Necessidades e Objetivos (Pain Points e Goals)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a plataforma soluciona com eficácia as principais dores do cliente em seu contexto de compra (como consultar a disponibilidade de estoque por loja e simular frete rapidamente).</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> O portal atende com precisão às necessidades prioritárias do setor de construção e reforma: permite verificar na página de produto se o item possui estoque disponível para retirada em lojas físicas específicas (ex: Taguatinga, Samambaia, Ceilândia) ou simular o frete apenas com o CEP, sem exigir cadastros longos e burocráticos.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>5. Validação Contínua</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a plataforma demonstra indícios de revisão periódica de usabilidade e acessibilidade diante da introdução de novos banners, campanhas e plugins promocionais.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li><strong>Análise da equipe:</strong> A constatação de novos banners sazonais entrando em produção sem atributo <code>alt</code> e de pop-ups de terceiros sem gestão de foco de teclado indica que o ciclo de manutenção do site carece de verificações contínuas de acessibilidade a cada nova atualização ou campanha publicada.</li>
+</ul>
+<hr />
+<h3 id="6-checklist-de-service-blueprint-jornada-do-usuario">6. Checklist de Service Blueprint &amp; Jornada do Usuário</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <strong>1. Avaliação de Evidências Físicas e Digitais (Physical/Digital Evidence)</strong></li>
+<li><strong>O que avaliamos:</strong> Se as evidências digitais do site (fichas técnicas, clareza de preços, prazos) estão em plena coerência e transição harmoniosa com os pontos de contato físicos da empresa.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Observamos excelente integração entre a experiência digital (catálogo atualizado, especificações e preços transparentes) e a estrutura corporativa física (as 10 lojas físicas bem sinalizadas na região e a frota própria de caminhões para entrega no DF).</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>2. Avaliação das Ações do Usuário (Customer Actions)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o fluxo de passos do cliente (pesquisa → cotação de CEP → adição ao carrinho → seleção de entrega/retirada → checkout) ocorre de forma direta, lógica e sem passos redundantes.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A jornada principal de compra segue uma estrutura linear e intuitiva, permitindo que o consumidor complete seu orçamento ou pedido online com poucos cliques e sem fricção desnecessária nas telas intermediárias.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>3. Avaliação das Ações de Frontstage (Canais Alternativos e Atendimento Humanizado)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o Service Blueprint garante canais alternativos de atendimento humanizado altamente visíveis e acessíveis (Televendas, WhatsApp por loja) caso o usuário enfrente barreiras na interface digital.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> <strong>Este é o ponto forte de maior destaque qualitativo identificado por nossa equipe em toda a avaliação.</strong> O site disponibiliza em posições estratégicas durante toda a jornada números de <strong>Televendas e botões flutuantes de WhatsApp interligados diretamente a cada uma das 10 Lojas físicas no DF e Entorno</strong>. Caso o cliente enfrente dúvidas técnicas sobre o produto ou dificuldades no fluxo digital, a rota de suporte humanizado está prontamente disponível e cumpre com excelência o papel de suporte equitativo.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>4. Avaliação das Ações de Backstage (Sistemas e Integrações Logísticas Visíveis)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a plataforma integra de forma coesa, nos bastidores visíveis do sistema, a verificação de estoque multicentro e o cálculo regional de frete em tempo real.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A camada logística de bastidores (<em>Backstage</em>) opera com muita eficiência nas consultas de tela, integrando em tempo real o saldo de estoque distribuído entre as lojas físicas e calculando com precisão as taxas de frete para as diferentes regiões do Distrito Federal.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>5. Avaliação de Processos de Suporte (Support Processes &amp; Autorrecuperação)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se os processos de suporte e pós-venda (como acompanhamento de pedidos e resolução de falhas no pagamento digital) oferecem rotas autônomas e claras na interface.</li>
+<li><strong>Resultado:</strong> <code>⚠️ Atenção</code></li>
+<li><strong>Análise da equipe:</strong> Caso ocorra alguma instabilidade no processamento de pagamentos digitais (como transações Pix não confirmadas instantaneamente ou recusa em cartões), o cliente dispõe de poucas opções automatizadas na área de "Meus Pedidos" para reprocessar ou compreender o erro de forma autônoma, dependendo do transbordo manual para o Televendas ou WhatsApp.</li>
+</ul>
+<hr />
+<h3 id="7-checklist-de-ferramentas-e-validacao-de-qa-auditoria-hibrida">7. Checklist de Ferramentas e Validação de QA / Auditoria Híbrida</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>1. Auditoria Técnica Híbrida (Inspeção Manual + Automatizada)</strong></li>
+<li><strong>O que avaliamos:</strong> Se a plataforma resiste a uma verificação técnica híbrida rigorosa (inspeção manual de código DOM associada a testes funcionais de navegação por teclado).</li>
+<li><strong>Resultado:</strong> <code>❌ Falha Crítica</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A auditoria híbrida revela as falhas estruturais ocultas para verificações automáticas superficiais: embora a página possua metadados e apresente renderização visual satisfatória, nossa inspeção manual da árvore DOM expôs a ausência total da tag <code>&lt;main&gt;</code> e os 7 campos interativos desprovidos de associação com <code>&lt;label&gt;</code>.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>2. Verificação de Meta Viewport e Responsividade Mobile</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se o portal se adapta de forma fluida em smartphones e tablets, verificando a presença da tag <code>&lt;meta name="viewport"&gt;</code> e a permissão para ampliação de zoom de acessibilidade.</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> A tag <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code> está implementada corretamente. O layout responsivo adapta as grades de produtos para telas de dispositivos móveis com eficiência e <strong>não bloqueia o gesto de pinça para zoom de acessibilidade</strong> (<code>user-scalable=no</code> não foi aplicado indevidamente), permitindo ampliação do texto.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> <strong>3. Inspeção de Regiões ARIA e Leitores de Tela (NVDA/VoiceOver)</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> A resposta real da interface quando inspecionada com sintetizadores de voz (NVDA no Windows e VoiceOver no macOS/iOS) para auditar como botões e links são vocalizados.</li>
+<li><strong>Resultado:</strong> <code>❌ Falha Crítica</code></li>
+<li>
+<p><strong>Análise da equipe:</strong> Durante nossos testes na árvore de acessibilidade (<em>Accessibility Tree</em>) executando leitores de tela reais, os botões centrais do topo (carrinho, busca e menu mobile) foram reprovados por omissão de <em>Accessible Name</em>. O sintetizador vocaliza apenas "botão" em branco ou lê a rota do arquivo SVG, resultando em reprovação imediata nas checagens WAI-ARIA para tecnologias assistivas.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled checked/> <strong>4. Diagnóstico de Erros no Console e Estabilidade Front-end</strong></p>
+</li>
+<li><strong>O que avaliamos:</strong> Se a navegação pelos departamentos, aplicação de filtros e fluxo de carrinho geram exceções JavaScript não tratadas, vazamentos ou quebras de script no Console (<code>DevTools</code>).</li>
+<li><strong>Resultado:</strong> <code>✅ Adequado</code></li>
+<li><strong>Análise da equipe:</strong> A engenharia front-end do portal demonstra alta estabilidade e robustez técnica. Inspecionamos o Console do navegador (<code>DevTools</code>) durante toda a jornada de navegação pelo catálogo e pelo carrinho de compras sem identificar nenhuma exceção fatal de JavaScript (<code>Uncaught TypeError</code>) ou travamento na aplicação.</li>
+</ul>
+<hr />
+<h2 id="secao-informativa-visao-geral-dos-3-checklists-nao-contabilizados-na-nota">Seção Informativa: Visão Geral dos 3 Checklists Não Contabilizados na Nota</h2>
+<p>Embora não entrem no cálculo da nossa nota técnica final (devido à impossibilidade de verificação externa via URL pública), apresentamos abaixo os <strong>3 checklists não contabilizados como recomendações metodológicas e de governança da nossa equipe</strong> para que a marca <strong>Castelo Forte</strong> aprimore sua maturidade interna em UX e acessibilidade:</p>
+<ul>
+<li><strong>8. Checklist de Design Empático (4 critérios — Não Contabilizado):</strong> Focado em <em>Condução de Entrevistas Etnográficas</em>, <em>Elaboração de Mapa de Empatia</em>, <em>Dinâmicas de Empatia com a Equipe</em> e <em>Testes de Concepção com Usuários PCD</em>. <strong>Recomendação da nossa equipe:</strong> sugerimos que os desenvolvedores front-end e designers da plataforma realizem dinâmicas internas periódicas de navegação no site utilizando apenas o teclado e o sintetizador NVDA com o monitor desligado, vivenciando na prática as barreiras identificadas nesta auditoria.</li>
+<li><strong>9. Checklist de Gestão de Projetos e Agilidade DoD (5 critérios — Não Contabilizado):</strong> Focado em <em>Orçamento de QA Acessível</em>, <em>Inclusão de WCAG na Definition of Done</em>, <em>Capacitação do Time</em>, <em>Linter no CI/CD</em> e <em>Contratos de Procurement</em>. <strong>Recomendação da nossa equipe:</strong> em nossa análise metodológica, a principal hipótese para a ocorrência das 7 falhas críticas técnicas no site é a <strong>ausência de checagens obrigatórias de acessibilidade na Definition of Done (DoD) interna da equipe</strong>, o que permite a publicação rotineira de banners e componentes sem os devidos atributos semânticos.</li>
+<li><strong>10. Checklist de Condução de Testes de Usabilidade / Think-Aloud (5 critérios — Não Contabilizado):</strong> Focado em <em>Planejamento do Teste</em>, <em>Recrutamento Inclusivo</em>, <em>Protocolo Think-Aloud</em>, <em>Métricas de Sucesso na Tarefa</em> e <em>Escala SUS</em>. <strong>Recomendação da nossa equipe:</strong> recomendamos a condução semestral de rodadas empíricas de laboratório aplicando o protocolo <em>Think-Aloud</em> (pensar em voz alta) com amostras mistas de participantes (normovisuais e usuários de tecnologias assistivas) para mensurar o impacto das correções de código na pontuação de satisfação SUS.</li>
+</ul>
+<hr />
+<h2 id="conclusao-da-nossa-avaliacao-sintese-quantitativa-e-qualitativa">💡 Conclusão da Nossa Avaliação — Síntese Quantitativa e Qualitativa</h2>
+<p>Após aplicarmos os checklists do projeto <strong>CheckAAA</strong> no portal <strong>Castelo Forte</strong> (<code>casteloforte.com.br</code>), separando rigorosamente os <strong>7 Checklists verificáveis (42 critérios inspecionados)</strong> dos <strong>3 Checklists de processo interno (14 critérios não contabilizados)</strong>, nossa equipe consolidou um diagnóstico quantitativo e qualitativo aprofundado sobre a plataforma.</p>
+<h3 id="sintese-quantitativa-da-nota-tecnica">📊 Síntese Quantitativa da Nota Técnica</h3>
+<p>Consolidando os <strong>42 critérios que nossa equipe inspecionou diretamente na interface e no código-fonte</strong>, o site do Castelo Forte atingiu <strong>54,8% de conformidade plena (<code>✅ Adequado</code>)</strong>, <strong>28,6% de pontos de alerta (<code>⚠️ Atenção</code>)</strong> e <strong>16,6% de falhas críticas de acessibilidade (<code>❌ Falha Crítica</code>)</strong>:</p>
+<div class="highlight"><pre><span></span><code>+-----------------------------------------------------------------------+
+|          DISTRIBUIÇÃO DOS 42 CRITÉRIOS VERIFICADOS PELA EQUIPE        |
++-----------------------------------------------------------------------+
+|  ✅ Adequados (Conformidade Plena)      :  23 critérios (54,8%)       |
+|  ⚠️ Pontos de Atenção (Gargalos de UX)  :  12 critérios (28,6%)       |
+|  ❌ Falhas Críticas (Barreiras de A11y) :  07 critérios (16,6%)       |
++-----------------------------------------------------------------------+
+|  ÍNDICE GERAL DE ADEQUAÇÃO TÉCNICA      :  54,8%                      |
++-----------------------------------------------------------------------+
+</code></pre></div>
+<p>A análise quantitativa por checklist revela uma clara polarização de desempenho técnico entre as diferentes camadas da plataforma:</p>
+<ol>
+<li><strong>Desempenho Elevado no Atendimento e Comercial (80% em Service Blueprint e 70% em Heurísticas):</strong> A plataforma atinge suas melhores notas nas dimensões que medem a arquitetura de informação visual, a categorização de produtos por fases de obra, a rapidez na simulação de frete e, principalmente, a excelência e visibilidade do suporte humanizado na jornada (<em>Frontstage</em>).</li>
+<li><strong>Deficit Crítico em Estrutura Semântica e Acessibilidade (33,3% em Desenvolvimento Web e 40% em Personas):</strong> Por outro lado, o e-commerce sofre penalizações severas nas camadas estruturais da engenharia front-end. As <strong>7 Falhas Críticas (<code>❌</code>)</strong> identificadas em nossa inspeção concentram-se na ausência da tag <code>&lt;main&gt;</code>, falta de <code>&lt;label&gt;</code> programático em 7 inputs de formulário, omissão de <code>alt</code> em 123 banners da home e controles clicáveis sem <code>aria-label</code>.</li>
+</ol>
+<h3 id="analise-qualitativa-o-duplo-padrao-de-experiencia-e-a-hipotese-de-governanca">🔍 Análise Qualitativa (O Duplo Padrão de Experiência e a Hipótese de Governança)</h3>
+<p>Em nossa análise qualitativa, constatamos que o portal apresenta um <strong>"duplo padrão de experiência do usuário"</strong>, que varia consideravelmente de acordo com o perfil sensorial e as ferramentas de navegação utilizadas:</p>
+<h4 id="1-o-ponto-forte-qualitativo-a-rede-de-seguranca-do-atendimento-humanizado-frontstage">1. O Ponto Forte Qualitativo: A Rede de Segurança do Atendimento Humanizado (<em>Frontstage</em>)</h4>
+<p>Para o consumidor normovisual navegando por mouse ou tela touch, o site do Castelo Forte cumpre seu papel comercial de forma muito eficiente. A estruturação do catálogo por fases da obra, a agilidade no cálculo de frete por CEP e a estabilidade técnica dos servidores proporcionam uma experiência satisfatória. </p>
+<p>Sobretudo, o grande destaque que observamos em nossa avaliação de <em>Service Blueprint</em> é a <strong>presença ostensiva de canais alternativos humanizados — Televendas em destaque e botões flutuantes de WhatsApp interligados diretamente a cada uma das 10 Lojas físicas no DF e Entorno</strong>. Caso o cliente apresente dúvidas sobre especificações de materiais ou enfrente entraves no fluxo de cotação online, a rota de escape humanizada está prontamente acessível, funcionando como uma rede de segurança de alta eficácia na conversão de vendas.</p>
+<h4 id="2-o-ponto-critico-qualitativo-a-barreira-excludente-para-tecnologias-assistivas-backstage-codigo">2. O Ponto Crítico Qualitativo: A Barreira Excludente para Tecnologias Assistivas (<em>Backstage &amp; Código</em>)</h4>
+<p>Em nítido contraste, em nossas simulações com personas que dependem de leitores de tela (como NVDA ou VoiceOver) e navegação por teclado, a interface revelou severas barreiras de acessibilidade. A omissão sistemática do atributo <code>alt</code> em <strong>123 imagens informativas e banners promocionais na página inicial</strong> transforma as principais campanhas de ofertas da rede em silêncio ou em vocalizações de nomes técnicos de arquivos para usuários com deficiência visual.</p>
+<p>Ademais, a ausência de marcos semânticos (<code>&lt;main&gt;</code>), a omissão de <code>&lt;label&gt;</code> em <strong>7 campos interativos</strong> (como a barra de pesquisa central e consulta de frete) e a inexistência de <em>Skip Links</em> transformam a navegação por teclado em um processo exaustivo. Em nossos testes, precisamos pressionar a tecla <code>Tab</code> mais de <strong>35 vezes seguidas</strong> em cada novo carregamento de página apenas para ultrapassar todo o cabeçalho e megamenu, tentando identificar botões que são anunciados pelo leitor de tela sem nome acessível.</p>
+<h4 id="3-diagnostico-qualitativo-de-governanca-a-hipotese-da-definition-of-done-dod">3. Diagnóstico Qualitativo de Governança: A Hipótese da <em>Definition of Done (DoD)</em></h4>
+<p>Em debate interno em nossa equipe sobre as causas dessas 7 falhas críticas técnicas em uma plataforma comercialmente robusta, recorremos aos conceitos metodológicos do nosso checklist de Gestão Ágil de Projetos. Nossa principal hipótese conclusiva é que as barreiras estruturais <strong>não decorrem de limitações orçamentárias ou restrições tecnológicas da plataforma de e-commerce</strong>, mas sim de uma lacuna clara nos processos de governança ágil e qualidade (<em>Quality Assurance</em>). A publicação rotineira de banners sem texto alternativo evidencia que a equipe de desenvolvimento e marketing opera sem exigir checagens de acessibilidade como critério obrigatório na <strong>Definition of Done (DoD)</strong> de suas entregas.</p>
+<h3 id="plano-de-acao-recomendacoes-do-grupo-9-para-o-castelo-forte">🎯 Plano de Ação (Recomendações do Grupo 9 para o Castelo Forte)</h3>
+<p>Para que o <strong>Castelo Forte</strong> supere essas barreiras estruturais e eleve seu índice de conformidade técnica dos atuais <strong>54,8% para mais de 90%</strong> — consolidando-se como referência nacional em acessibilidade digital no setor de construção civil —, nossa equipe propõe o seguinte roteiro estratégico fundamentado no ecossistema <strong>CheckAAA</strong>:</p>
+<ol>
+<li><strong>Curto Prazo — Ações Corretivas de Código HTML (<em>Quick Wins</em>):</strong></li>
+<li><strong>Inclusão de Rótulos ARIA nos Controles:</strong> Adicionar os atributos <code>aria-label="Carrinho de Compras"</code>, <code>aria-label="Buscar Produtos"</code> e <code>aria-label="Fechar Promoção"</code> nos ícones vetoriais do topo e dos modais.</li>
+<li><strong>Associação Programática de Formulários:</strong> Inserir tags <code>&lt;label class="sr-only"&gt;</code> ocultas visualmente (ou atributo <code>aria-label</code>) nos 7 campos de input identificados sem rótulo, garantindo que o leitor de tela vocalize corretamente a finalidade do campo ("Digite o nome do produto ou código").</li>
+<li>
+<p><strong>Marcos Semânticos e Atalhos de Teclado:</strong> Envolver o bloco central de conteúdo das páginas com a tag <code>&lt;main id="conteudo-principal"&gt;</code> e disponibilizar no topo da página o atalho <em>Skip Link</em> (<code>&lt;a href="#conteudo-principal" class="skip-link"&gt;Pular para o conteúdo principal&lt;/a&gt;</code>).</p>
+</li>
+<li>
+<p><strong>Médio Prazo — Ajustes Visuais e Configuração do CMS:</strong></p>
+</li>
+<li><strong>Obrigatoriedade de <code>Alt Text</code> no Painel CMS:</strong> Configurar o sistema administrativo da plataforma de e-commerce para bloquear a publicação de novos banners promocionais caso o atributo de texto alternativo (<code>alt</code>) não seja preenchido pela equipe de marketing.</li>
+<li><strong>Adequação de Contraste e Touch Targets:</strong> Ajustar a tonalidade dos links secundários em cinza claro no rodapé para atingir a razão mínima de 4.5:1 (WCAG AA) e ampliar a área de clique interativa (<code>padding</code>) dos ícones de paginação mobile para pelo menos 44x44 pixels.</li>
+<li>
+<p><strong>Controle de Movimento em Carrosséis:</strong> Adicionar um botão discreto de "Pausar Rotação" no carrossel de banners da página inicial e configurar a retenção de foco de teclado (<code>focus trap</code>) no interior de modais promocionais ao serem acionados.</p>
+</li>
+<li>
+<p><strong>Longo Prazo — Governança Ágil e CI/CD (Aplicação do Checklist de Gestão Interna):</strong></p>
+</li>
+<li><strong>Atualização da <em>Definition of Done (DoD)</em> das Sprints:</strong> Reformular os critérios de aceite de tarefas (<em>User Stories</em>) das equipes front-end e marketing, estabelecendo como regra que nenhuma nova funcionalidade ou campanha entra em produção sem checagem positiva no checklist de acessibilidade do projeto.</li>
+<li><strong>Automação de Linters no CI/CD:</strong> Integrar ferramentas automatizadas de checagem (como o <strong>Plugin Avaliador Heurístico CheckAAA v3.0</strong> e o motor <em>axe-core</em>) no fluxo de testes contínuos da esteira de deploy, impedindo que modificações quebrem a semântica ou o contraste do portal.</li>
+</ol>
+<blockquote>
+<p><strong>Consideração Final da Equipe:</strong> O <strong>Castelo Forte</strong> já conta com uma rede de atendimento humanizado exemplar e 35 anos de trajetória consolidada no Distrito Federal. Ao integrar a excelência de seu atendimento às diretrizes semânticas de acessibilidade digital recomendadas pelo <strong>CheckAAA</strong>, a plataforma garantirá uma experiência de compra moderna, equitativa e verdadeiramente inclusiva para todos os cidadãos.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
